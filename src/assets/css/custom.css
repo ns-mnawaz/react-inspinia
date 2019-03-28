@@ -1,0 +1,19 @@
+h1, h2, h3, h4, h5, h6 {
+    color: currentColor;
+}
+
+/* menu */
+.ant-menu-dark.ant-menu-inline {
+    background-color: #2f4050 !important
+}
+
+.ant-menu-dark .ant-menu-inline.ant-menu-sub {
+    background: #2f4050 !important;
+    -webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+.ant-menu-dark, .ant-menu-dark .ant-menu-sub {
+    background: #2f4050 !important;
+}

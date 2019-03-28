@@ -1,0 +1,46 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+
+# testing
+/coverage
+
+# misc
+.DS_Store
+.env.*
+
+# build folder
+build_webpack
+**/build_webpack
+
+# build folder
+build
+**/build
+
+# WebStrom indexes idea
+.idea
+**/.idea
+
+# Visual Studio indexes vscode
+.vscode
+**/.vscode
+
+# logs
+*.log.*
+**/*.log.*
+**/*.log
+
+# blocks
+**/*.block
+
+# package lock
+*-lock.json
+**/*-lock.json
+
+# node modules
+node_modules
+**/node_modules
+
+# frontend build
+build_webpack/
