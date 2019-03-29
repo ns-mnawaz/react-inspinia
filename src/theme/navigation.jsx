@@ -36,11 +36,11 @@ class Navigation extends Component {
                   <span className="text-muted text-xs block">Art Director <b className="caret" /></span>
                 </a>
                 <ul className="dropdown-menu animated fadeInRight m-t-xs">
-                  <li><a className="dropdown-item" href="profile.html">Profile</a></li>
-                  <li><a className="dropdown-item" href="contacts.html">Contacts</a></li>
-                  <li><a className="dropdown-item" href="mailbox.html">Mailbox</a></li>
+                  <li><a className="dropdown-item" href="/app/profile">Profile</a></li>
+                  <li><a className="dropdown-item" href="/app/contact">Contacts</a></li>
+                  <li><a className="dropdown-item" href="/app/mail">Mailbox</a></li>
                   <li className="dropdown-divider" />
-                  <li><a className="dropdown-item" href="login.html">Logout</a></li>
+                  <li><a className="dropdown-item" href="/login">Logout</a></li>
                 </ul>
               </div>
               <div className="logo-element">
@@ -48,22 +48,22 @@ class Navigation extends Component {
               </div>
             </li>
             {/* menu */}
-            <MenuItem path="/home" icon="home" label="Home" />
+            <MenuItem path="/app/home" icon="home" label="Home" />
             <MenuTree icon="building-o" label="General">
-              <MenuItem path="/page1" label="Page Example 1" tree />
-              <MenuItem path="/page2" label="Page Example 2" tree />
+              <MenuItem path="/app/page1" label="Page Example 1" tree />
+              <MenuItem path="/app/page2" label="Page Example 2" tree />
               <MenuTree icon="building-o" label="General">
-                <MenuItem path="/page1" label="Page Example 1" tree />
-                <MenuItem path="/page2" label="Page Example 2" tree />
+                <MenuItem path="/app/page1" label="Page Example 1" tree />
+                <MenuItem path="/app/page2" label="Page Example 2" tree />
               </MenuTree>
             </MenuTree>
             <MenuTree icon="building-o" label="General">
-              <MenuItem path="/page1" label="Page Example 1" tree />
-              <MenuItem path="/page2" label="Page Example 2" tree />
+              <MenuItem path="/app/page1" label="Page Example 1" tree />
+              <MenuItem path="/app/page2" label="Page Example 2" tree />
             </MenuTree>
             <MenuTree icon="building-o" label="General">
-              <MenuItem path="/page1" label="Page Example 1" tree />
-              <MenuItem path="/page2" label="Page Example 2" tree />
+              <MenuItem path="/app/page1" label="Page Example 1" tree />
+              <MenuItem path="/app/page2" label="Page Example 2" tree />
             </MenuTree>
           </ul>
         </div>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import Routes from './common/routes';
+import Routes from './routes';
 
 import jQuery from 'jquery';
 window.$ = jQuery;

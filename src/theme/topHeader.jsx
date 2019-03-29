@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-
+import { Link } from 'react-router-dom';
 import { smoothlyMenu } from './helpers/helpers';
 import $ from 'jquery';
 
@@ -26,9 +26,10 @@ class TopHeader extends Component {
           </div>
           <ul className="nav navbar-top-links navbar-right">
             <li>
-              <a href="#">
+              <a href="/login">
                 <i className="fa fa-sign-out"/> Exit
               </a>
+              <Link to="/login">Logout</Link>
             </li>
           </ul>
         </nav>

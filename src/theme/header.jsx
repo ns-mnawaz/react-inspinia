@@ -9,7 +9,7 @@ export default class Header extends Component {
           <h2>{this.props.title}</h2>
           <ol className="breadcrumb">
             <li className="breadcrumb-item">
-              <Link to="/home">Home</Link>
+              <Link to="/app/home">Home</Link>
             </li>
             <li className="breadcrumb-item active">
               <strong>{this.props.title}</strong>
