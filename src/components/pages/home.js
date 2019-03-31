@@ -1,21 +1,18 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { Link } from 'react-router-dom';
 import Content from '../../theme/content';
 import Header from '../../theme/header';
 
-class Home extends Component {
-  constructor(props) {
-    super(props);
-  }
+const mapStateToProps = (state) => ({ teste: state.teste });
+const mapDispatchToProps = (dispatch) => bindActionCreators({}, dispatch);
 
+class Home extends Component {
   render() {
     return (
       <div>
-        <Header title="Dashboard">
-          <Link to="/app/dashboard" className="btn btn-warning btn-sm">dashboard</Link>
-        </Header>
+        <Header title="Dashboard"/>
         <Content>
           <div className="row">
             <div className="col-lg-12">
@@ -32,8 +29,5 @@ class Home extends Component {
     );
   }
 }
-
-const mapStateToProps = (state) => ({ teste: state.teste });
-const mapDispatchToProps = (dispatch) => bindActionCreators({}, dispatch);
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);

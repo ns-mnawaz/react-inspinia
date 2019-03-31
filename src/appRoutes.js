@@ -1,6 +1,7 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import $ from 'jquery';
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import Progress from './theme/progress';
 import Navigation from './theme/navigation';
 import TopHeader from './theme/topHeader';
@@ -33,20 +34,19 @@ export default class AppRoutes extends Component {
   render() {
     return (
       <div id="wrapper">
-        <BrowserRouter>
-          <Progress />
-          <Navigation />
-          <div id="page-wrapper" className="gray-bg">
-            <TopHeader />
-            <Switch>
-              <Route path={`${this.state.match.url}/page1`} exact component={Page1} />
-              <Route path={`${this.state.match.url}/dashboard`} exact component={Dashboard} />
-              <Route path={`${this.state.match.url}/home`} exact component={Home} />
-              <Route component={NotFound}/>
-            </Switch>
-            <Footer />
-          </div>
-        </BrowserRouter>
+        <Progress />
+        <Navigation />
+        <div id="page-wrapper" className="gray-bg">
+          <TopHeader />
+          <Switch>
+            <Route path={`${this.state.match.url}`} exact component={Home} />
+            <Route path={`${this.state.match.url}/page1`} exact component={Page1} />
+            <Route path={`${this.state.match.url}/dashboard`} exact component={Dashboard} />
+            <Route path={`${this.state.match.url}/home`} exact component={Home} />
+            <Route component={NotFound}/>
+          </Switch>
+          <Footer />
+        </div>
       </div>
     );
   }

@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -6,9 +7,6 @@ import Content from '../../theme/content';
 import Header from '../../theme/header';
 
 class Page1 extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     return (
