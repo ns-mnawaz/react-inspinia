@@ -8,7 +8,6 @@ import TopHeader from './theme/topHeader';
 import Footer from './theme/footer';
 import { correctHeight, detectBody } from './theme/helpers/helpers';
 
-import './assets/dependencies';
 
 import Dashboard from './components/pages/dashboard';
 import Page1 from './components/pages/page1';

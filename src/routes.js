@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import Login from './components/common/login';
 import NotFound from './components/common/notFound';
 import AppRoutes from './appRoutes';
+import './assets/dependencies';
 
 export default class Routes extends Component {
   render() {
