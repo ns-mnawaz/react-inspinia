@@ -12,6 +12,7 @@ import { correctHeight, detectBody } from './theme/helpers/helpers';
 import Dashboard from './components/pages/dashboard';
 import Page1 from './components/pages/page1';
 import Home from './components/pages/home';
+import Permissions from './components/pages/permissions';
 import NotFound from './components/common/notFound';
 
 export default class AppRoutes extends Component {
@@ -42,6 +43,7 @@ export default class AppRoutes extends Component {
             <Route path={`${this.state.match.url}/page1`} exact component={Page1} />
             <Route path={`${this.state.match.url}/dashboard`} exact component={Dashboard} />
             <Route path={`${this.state.match.url}/home`} exact component={Home} />
+            <Route path={`${this.state.match.url}/permissions`} exact component={Permissions} />
             <Route component={NotFound}/>
           </Switch>
           <Footer />

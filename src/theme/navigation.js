@@ -11,12 +11,13 @@ import profileSmall from '../assets/img/profileSmall.jpg';
 import { smoothlyMenu } from './helpers/helpers';
 import $ from 'jquery';
 import list from '../constants/list';
+import { getTreeMenu } from '../helpers/permissions';
 
 class Navigation extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      menu: list.menu,
+      menu: getTreeMenu(list.menu),
       navMenu: list.navMenu
     };
   }
