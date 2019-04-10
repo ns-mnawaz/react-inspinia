@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Login from './components/common/login';
+import Landing from './components/common/landing';
 import NotFound from './components/common/notFound';
 import AppRoutes from './appRoutes';
 import './assets/dependencies';
@@ -10,7 +11,7 @@ export default class Routes extends Component {
     return (
       <div>
         <Switch>
-          <Route path="/" exact component={Login} />
+          <Route path="/" exact component={Landing} />
           <Route path="/login" component={Login} />
           <Route path="/app" component={AppRoutes} />
           <Route component={NotFound}/>

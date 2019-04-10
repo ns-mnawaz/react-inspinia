@@ -1,12 +1,25 @@
 import $ from 'jquery';
 import React, { Component } from 'react';
-import { correctHeight, detectBody } from '../../theme/helpers/helpers';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { Checkbox } from 'react-icheck';
-
+import EnhancedSwitch from 'react-icheck/lib/EnhancedSwitch';
+import { correctHeight, detectBody } from '../../theme/helpers/helpers';
 import '../../assets/dependencies';
 
+EnhancedSwitch.propTypes = {
+  ...EnhancedSwitch.propTypes,
+  cursor: PropTypes.string
+};
+
 export default class Login extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      checked: false
+    };
+  }
+
   componentDidMount() {
     // eslint-disable-next-line func-names
     $(window).bind('load resize', function() {
@@ -14,6 +27,11 @@ export default class Login extends Component {
       detectBody();
     });
   }
+  handleChange = (e, value) => {
+    console.log(e.target.name);
+    console.log(e.target.value);
+    console.log(value);
+  };
 
   render() {
     return (
@@ -33,6 +51,10 @@ export default class Login extends Component {
             <Checkbox
               checkboxClass="icheckbox_square-green"
               increaseArea="20%"
+              checked={this.state.checked}
+              onChange={this.handleChange}
+              name="checked"
+              cursor="pointer"
               label="<span class='checkbox-label'>Remember Me</span>"
             />
           </div>

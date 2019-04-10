@@ -34,7 +34,7 @@ class TopHeader extends Component {
                 <li>
                   <div className="dropdown-messages-box">
                     <a href="profile.html" className="pull-left">
-                      <img alt="image" className="img-circle" src={a7}/>
+                      <img alt="" className="img-circle" src={a7}/>
                     </a>
                     <div className="media-body">
                       <small className="pull-right">46h ago</small>
@@ -43,11 +43,11 @@ class TopHeader extends Component {
                     </div>
                   </div>
                 </li>
-                <li className="divider"></li>
+                <li className="divider" />
                 <li>
                   <div className="dropdown-messages-box">
                     <a href="profile.html" className="pull-left">
-                      <img alt="image" className="img-circle" src={a4}/>
+                      <img alt="" className="img-circle" src={a4}/>
                     </a>
                     <div className="media-body ">
                       <small className="pull-right text-navy">5h ago</small>
@@ -56,11 +56,11 @@ class TopHeader extends Component {
                     </div>
                   </div>
                 </li>
-                <li className="divider"></li>
+                <li className="divider" />
                 <li>
                   <div className="dropdown-messages-box">
                     <a href="profile.html" className="pull-left">
-                      <img alt="image" className="img-circle" src={profile}/>
+                      <img alt="" className="img-circle" src={profile}/>
                     </a>
                     <div className="media-body ">
                       <small className="pull-right">23h ago</small>
@@ -69,11 +69,11 @@ class TopHeader extends Component {
                     </div>
                   </div>
                 </li>
-                <li className="divider"></li>
+                <li className="divider" />
                 <li>
                   <div className="text-center link-block">
                     <a href="mailbox.html">
-                      <i className="fa fa-envelope"></i> <strong>Read All Messages</strong>
+                      <i className="fa fa-envelope" /> <strong>Read All Messages</strong>
                     </a>
                   </div>
                 </li>
