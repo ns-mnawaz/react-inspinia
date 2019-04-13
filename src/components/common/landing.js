@@ -4,6 +4,7 @@ import { correctHeight, detectBody } from '../../theme/helpers/helpers';
 import '../../assets/dependencies';
 import Slider from '../../theme/slider';
 import { Link } from 'react-router-dom';
+import logo from '../../assets/img/logo.png';
 
 export default class Landing extends Component {
   constructor(props) {
@@ -29,7 +30,9 @@ export default class Landing extends Component {
               aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon" />
             </button>
-            <a className="navbar-brand" href="#">LOGO</a>
+              <Link className="nav-link" to="">
+                  <img alt="" className="img-circle" src={logo}/>
+              </Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
               aria-controls="navbarText"
               aria-expanded="false" aria-label="Toggle navigation">
@@ -89,11 +92,11 @@ export default class Landing extends Component {
           </div>
           <div className="row">
             <div className="col-md-12 text-center wow fadeInLeft">
-              <p>Building on over 18 years of experience, Avanza serves 300+ clients in more than 45 countries.
+              <p>Building on over 18 years of experience, Claytones Private Limited serves 300+ clients in more than 45 countries.
 
-                            Avanza has over 500+ product deployments processing over 12 million transactions every day on 9000 terminals, backed by a team of 300 expert resources worldwide.
+                  Claytones Private Limited has over 500+ product deployments processing over 12 million transactions every day on 9000 terminals, backed by a team of 300 expert resources worldwide.
 
-                            Avanza serves clients worldwide, cutting a cross-section of industries, with the specific concentration in the financial and government sectors. Our business philosophy is founded on the importance of relationships and a persistent search for greater accomplishments.
+                  Claytones Private Limited serves clients worldwide, cutting a cross-section of industries, with the specific concentration in the financial and government sectors. Our business philosophy is founded on the importance of relationships and a persistent search for greater accomplishments.
               </p>
             </div>
           </div>
@@ -111,11 +114,11 @@ export default class Landing extends Component {
               <div className="col-lg-3"/>
               <div className="col-lg-3">
                 <address>
-                  <strong><span className="navy">Avanza Solutions Private Limited</span></strong><br/>
-                                Suite 14B, 14th Floor<br/>
-                                Fakri Trade Center<br/>
+                  <strong><span className="navy">Claytones Private Limited</span></strong><br/>
+                                HBL Block<br/>
+                                City Campus, IBA Karachi<br/>
                                 Karachi, Pakistan<br/>
-                  <abbr title="Phone">P:</abbr> (+92) 111-AVANZA
+                  <abbr title="Phone">P:</abbr> (+92) 111-CLAYTONES
                 </address>
               </div>
               <div className="col-lg-4">
@@ -126,7 +129,7 @@ export default class Landing extends Component {
             </div>
             <div className="row">
               <div className="col-lg-12 text-center">
-                <a href="mailto:info@avanzasolutions.com" className="btn btn-primary">Send us mail</a>
+                <a href="mailto:mir.nawaz@iba.edu.pk" className="btn btn-primary">Send us mail</a>
                 <p className="m-t-sm">
                                 Or follow us on social platform
                 </p>
@@ -143,7 +146,7 @@ export default class Landing extends Component {
             <div className="row">
               <div className="col-lg-2" />
               <div className="col-lg-8 text-center m-t-lg m-b-lg">
-                <p><strong>&copy; 2019 Avanza Solutions</strong><br/> All rights reserved</p>
+                <p><strong>&copy; 2019 Claytones Private Limited</strong><br/> All rights reserved</p>
               </div>
             </div>
           </div>

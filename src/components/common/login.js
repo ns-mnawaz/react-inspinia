@@ -6,6 +6,7 @@ import { Checkbox } from 'react-icheck';
 import EnhancedSwitch from 'react-icheck/lib/EnhancedSwitch';
 import { correctHeight, detectBody } from '../../theme/helpers/helpers';
 import '../../assets/dependencies';
+import logo from '../../assets/img/logo.png';
 
 EnhancedSwitch.propTypes = {
   ...EnhancedSwitch.propTypes,
@@ -37,7 +38,10 @@ export default class Login extends Component {
     return (
       <div className="gray-bg" style={{ height: '100vh' }} >
         <div className="middle-box text-center loginscreen animated fadeInDown" style={{ paddingBottom: '40px' }}>
-          <h3>Welcome to True API</h3>
+          <Link className="nav-link" to="">
+            <img alt="" className="img-circle" src={logo}/>
+          </Link>
+          <h3>Get Hired!</h3>
           <p>Login in. To see it in action.</p>
           <div className="form-group input-group m-b">
             <span className="input-group-addon"><i className="fa fa-at"/></span>
@@ -68,7 +72,7 @@ export default class Login extends Component {
           <Link className="btn btn-sm btn-white btn-block" to="/app/home">Create Account</Link>
           <Link className="btn btn-sm btn-white btn-block" to="/app/home">Activate Account</Link>
           <p className="m-t">
-            <small>&copy; 2019 Avanza Solutions. All rights reserved</small>
+            <small>&copy; 2019 Claytones Private Limited. All rights reserved</small>
           </p>
         </div>
       </div>

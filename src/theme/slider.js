@@ -3,6 +3,8 @@ import 'react-bootstrap-carousel/dist/react-bootstrap-carousel.css';
 import RBCarousel from 'react-bootstrap-carousel';
 import Col from './column';
 import Row from './row';
+import header1 from '../assets/img/landing/header_one.jpg';
+import header2 from '../assets/img/landing/header_two.jpg';
 
 const styles = { height: 400, width: '100%' };
 
@@ -45,20 +47,14 @@ export default class Demo extends React.PureComponent {
               <div style={{ height: 400 }}>
                 <img
                   style={{ width: '100%', height: '100%' }}
-                  src="https://www.w3schools.com/bootstrap/ny.jpg"
+                  src={header1}
                 />
               </div>
               <div style={{ height: 400 }}>
                 <img
                   style={{ width: '100%', height: '100%' }}
-                  src="https://www.w3schools.com/bootstrap/ny.jpg"
+                  src={header2}
                 />
-              </div>
-              <div style={{ height: 400, width: '100%', backgroundColor: 'lightpink' }}>
-                <div className="carousel-center">center Text</div>
-              </div>
-              <div style={{ ...styles, backgroundColor: 'lightblue' }}>
-                <span>text</span>
               </div>
               <div style={{ ...styles, backgroundColor: 'lightblue' }}>
                 <div className="carousel-center">
