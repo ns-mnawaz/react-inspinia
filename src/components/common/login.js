@@ -35,7 +35,7 @@ export default class Login extends Component {
 
   render() {
     return (
-      <div className="gray-bg" >
+      <div className="gray-bg" style={{ height: '100vh' }} >
         <div className="middle-box text-center loginscreen animated fadeInDown" style={{ paddingBottom: '40px' }}>
           <h3>Welcome to True API</h3>
           <p>Login in. To see it in action.</p>

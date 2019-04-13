@@ -2,6 +2,8 @@ import $ from 'jquery';
 import React, { Component } from 'react';
 import { correctHeight, detectBody } from '../../theme/helpers/helpers';
 import '../../assets/dependencies';
+import Slider from '../../theme/slider';
+import { Link } from 'react-router-dom';
 
 export default class Landing extends Component {
   constructor(props) {
@@ -41,15 +43,22 @@ export default class Landing extends Component {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">Top Menu Items</a>
+                  <a className="nav-link" href="#features">Features</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#about-us">about us</a>
+                  <a className="nav-link" href="#about-us">About us</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#contact">Contact</a>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/login">Login</Link>
                 </li>
               </ul>
             </div>
           </nav>
         </div>
+        <Slider/>
         <section id="features" className="container services">
           <div className="row">
             <div className="col-sm-3">
