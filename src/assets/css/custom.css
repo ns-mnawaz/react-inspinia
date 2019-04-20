@@ -37,3 +37,10 @@ h1, h2, h3, h4, h5, h6 {
 .carousel-control.right:hover, .carousel-control-next:hover{
     background-image: none !important;
 }
+
+.dropdown-menu .divider{
+    height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}

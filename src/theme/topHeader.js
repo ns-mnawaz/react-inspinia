@@ -24,7 +24,7 @@ class TopHeader extends Component {
           </div>
           <ul className="nav navbar-top-links navbar-right">
             <li>
-              <span className="m-r-sm text-muted welcome-message">Welcome to INSPINIA+ Admin Theme.</span>
+              <span className="m-r-sm text-muted welcome-message">Welcome to Get Hired.</span>
             </li>
             <li className="dropdown">
               <a className="dropdown-toggle count-info" data-toggle="dropdown" href="#">
@@ -74,6 +74,48 @@ class TopHeader extends Component {
                   <div className="text-center link-block">
                     <a href="mailbox.html">
                       <i className="fa fa-envelope" /> <strong>Read All Messages</strong>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li className="dropdown">
+              <a className="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                <i className="fa fa-bell" />  <span className="label label-primary">8</span>
+              </a>
+              <ul className="dropdown-menu dropdown-alerts">
+                <li>
+                  <a href="mailbox.html">
+                    <div>
+                      <i className="fa fa-envelope fa-fw" /> You have 16 messages
+                      <span className="pull-right text-muted small">4 minutes ago</span>
+                    </div>
+                  </a>
+                </li>
+                <li className="divider" />
+                <li>
+                  <a href="profile.html">
+                    <div>
+                      <i className="fa fa-twitter fa-fw" /> 3 New Followers
+                      <span className="pull-right text-muted small">12 minutes ago</span>
+                    </div>
+                  </a>
+                </li>
+                <li className="divider" />
+                <li>
+                  <a href="grid_options.html">
+                    <div>
+                      <i className="fa fa-upload fa-fw" /> Server Rebooted
+                      <span className="pull-right text-muted small">4 minutes ago</span>
+                    </div>
+                  </a>
+                </li>
+                <li className="divider" />
+                <li>
+                  <div className="text-center link-block">
+                    <a href="notifications.html">
+                      <strong>See All Alerts </strong>
+                      <i className="fa fa-angle-right" />
                     </a>
                   </div>
                 </li>
