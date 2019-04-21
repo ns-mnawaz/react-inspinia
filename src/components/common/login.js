@@ -7,6 +7,7 @@ import EnhancedSwitch from 'react-icheck/lib/EnhancedSwitch';
 import { correctHeight, detectBody } from '../../theme/helpers/helpers';
 import '../../assets/dependencies';
 import logo from '../../assets/img/logo.png';
+import CopyRight from '../../theme/copyRight';
 
 EnhancedSwitch.propTypes = {
   ...EnhancedSwitch.propTypes,
@@ -28,11 +29,6 @@ export default class Login extends Component {
       detectBody();
     });
   }
-  handleChange = (e, value) => {
-    console.log(e.target.name);
-    console.log(e.target.value);
-    console.log(value);
-  };
 
   render() {
     return (
@@ -63,19 +59,23 @@ export default class Login extends Component {
             />
           </div>
           <button type="button" id="btnLogin" className="btn btn-primary block full-width m-b">{'Login'}</button>
-          <Link to="/app/home">
-            <small>Forgot Password</small>
+          <Link to="/activate">
+            <small>Forgot Password?</small>
           </Link>
           <p className="text-muted text-center">
-            <Link to="/app/home">Don't have an account</Link>
+            <Link to="/register">Don't have an account?</Link>
           </p>
-          <Link className="btn btn-sm btn-white btn-block" to="/app/home">Create Account</Link>
-          <Link className="btn btn-sm btn-white btn-block" to="/app/home">Activate Account</Link>
-          <p className="m-t">
-            <small>&copy; 2019 Claytones Private Limited. All rights reserved</small>
-          </p>
+          <Link className="btn btn-sm btn-white btn-block" to="/activate">Activate Account</Link>
+          <Link className="btn btn-sm btn-white btn-block" to="/register">Register</Link>
+          <br/>
+          <CopyRight/>
         </div>
       </div>
     );
   }
+
+  handleChange = (e, value) => {
+    this.setState({ [e.target.name]: value });
+  };
+
 }

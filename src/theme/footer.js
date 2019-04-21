@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CopyRight from './copyRight';
 
 export default class Footer extends Component {
   render() {
@@ -7,9 +8,7 @@ export default class Footer extends Component {
         <div className="pull-right">
                     10GB of <strong>250GB</strong> Free.
         </div>
-        <div>
-          <strong>Copyright</strong> Example Company &copy; 2015-2017
-        </div>
+        <CopyRight/>
       </div>
     );
   }

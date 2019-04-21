@@ -1,11 +1,15 @@
-import React, { Component } from 'react';
+import React, { Component, lazy } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import Login from './components/common/login';
+
 import Landing from './components/common/landing';
 import NotFound from './components/common/notFound';
-import Register from './components/common/register';
-import AppRoutes from './appRoutes';
+import WaitingComponent from './theme/waiting';
 import './assets/dependencies';
+
+const Login = lazy(() => import('./components/common/login'));
+const Activate = lazy(() => import('./components/common/activate'));
+const Register = lazy(() => import('./components/common/register'));
+const AppRoutes = lazy(() => import('./appRoutes'));
 
 export default class Routes extends Component {
   render() {
@@ -13,9 +17,10 @@ export default class Routes extends Component {
       <div>
         <Switch>
           <Route path="/" exact component={Landing} />
-          <Route path="/login" component={Login} />
-          <Route path="/app" component={AppRoutes} />
-          <Route path="/register" component={Register} />
+          <Route path="/login" component={WaitingComponent(Login)} />
+          <Route path="/activate" component={WaitingComponent(Activate)} />
+          <Route path="/app" component={WaitingComponent(AppRoutes)} />
+          <Route path="/register" component={WaitingComponent(Register)} />
           <Route component={NotFound}/>
         </Switch>
       </div>

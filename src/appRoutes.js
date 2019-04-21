@@ -1,19 +1,19 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import $ from 'jquery';
-import React, { Component } from 'react';
+import React, { Component, lazy } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Progress from './theme/progress';
 import Navigation from './theme/navigation';
 import TopHeader from './theme/topHeader';
 import Footer from './theme/footer';
 import { correctHeight, detectBody } from './theme/helpers/helpers';
+import WaitingComponent from './theme/waiting';
 
-
-import Dashboard from './components/pages/dashboard';
-import Page1 from './components/pages/page1';
-import Home from './components/pages/home';
-import Permissions from './components/pages/permissions';
-import NotFound from './components/common/notFound';
+const Dashboard = lazy(() => import('./components/pages/dashboard'));
+const Page1 = lazy(() => import('./components/pages/page1'));
+const Home = lazy(() => import('./components/pages/home'));
+const Permissions = lazy(() => import('./components/pages/permissions'));
+const NotFound = lazy(() => import('./components/common/notFound'));
 
 export default class AppRoutes extends Component {
   constructor(props) {
@@ -33,17 +33,17 @@ export default class AppRoutes extends Component {
 
   render() {
     return (
-      <div id="wrapper">
+      <div id="wrapper" className="app">
         <Progress />
         <Navigation />
         <div id="page-wrapper" className="gray-bg">
           <TopHeader />
           <Switch>
             <Route path={`${this.state.match.url}`} exact component={Home} />
-            <Route path={`${this.state.match.url}/page1`} exact component={Page1} />
-            <Route path={`${this.state.match.url}/dashboard`} exact component={Dashboard} />
-            <Route path={`${this.state.match.url}/home`} exact component={Home} />
-            <Route path={`${this.state.match.url}/permissions`} exact component={Permissions} />
+            <Route path={`${this.state.match.url}/page1`} exact component={WaitingComponent(Page1)} />
+            <Route path={`${this.state.match.url}/dashboard`} exact component={WaitingComponent(Dashboard)} />
+            <Route path={`${this.state.match.url}/home`} exact component={WaitingComponent(Home)} />
+            <Route path={`${this.state.match.url}/permissions`} exact component={WaitingComponent(Permissions)} />
             <Route component={NotFound}/>
           </Switch>
           <Footer />
