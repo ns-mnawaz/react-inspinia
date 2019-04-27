@@ -17,11 +17,6 @@ export default class Header extends Component {
             </li>
           </ol>
         </div>
-        <div className="col-sm-8">
-          <div className="title-action">
-            {this.props.children}
-          </div>
-        </div>
       </div>
     );
   }

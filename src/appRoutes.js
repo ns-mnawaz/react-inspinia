@@ -12,6 +12,7 @@ import WaitingComponent from './theme/waiting';
 const Dashboard = lazy(() => import('./components/pages/dashboard'));
 const Page1 = lazy(() => import('./components/pages/page1'));
 const Home = lazy(() => import('./components/pages/home'));
+const Profile = lazy(() => import('./components/pages/profile'));
 const Permissions = lazy(() => import('./components/pages/permissions'));
 const NotFound = lazy(() => import('./components/common/notFound'));
 
@@ -41,6 +42,7 @@ export default class AppRoutes extends Component {
           <Switch>
             <Route path={`${this.state.match.url}`} exact component={Home} />
             <Route path={`${this.state.match.url}/page1`} exact component={WaitingComponent(Page1)} />
+            <Route path={`${this.state.match.url}/profile`} exact component={WaitingComponent(Profile)} />
             <Route path={`${this.state.match.url}/dashboard`} exact component={WaitingComponent(Dashboard)} />
             <Route path={`${this.state.match.url}/home`} exact component={WaitingComponent(Home)} />
             <Route path={`${this.state.match.url}/permissions`} exact component={WaitingComponent(Permissions)} />

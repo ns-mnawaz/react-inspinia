@@ -137,4 +137,14 @@ h1, h2, h3, h4, h5, h6 {
         transform: rotate(360deg);
     }
 }
+.img-circle-lg {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
 
+.img-responsive{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

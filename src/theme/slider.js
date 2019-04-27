@@ -3,8 +3,10 @@ import 'react-bootstrap-carousel/dist/react-bootstrap-carousel.css';
 import RBCarousel from 'react-bootstrap-carousel';
 import Col from './column';
 import Row from './row';
-import header1 from '../assets/img/landing/header_one.jpg';
-import header2 from '../assets/img/landing/header_two.jpg';
+import header1 from '../assets/img/landing/landing_1.jpg';
+import header3 from '../assets/img/landing/landing_2.jpg';
+import header4 from '../assets/img/landing/landing_3.jpg';
+import header5 from '../assets/img/landing/landing_4.jpg';
 
 const styles = { height: 400, width: '100%' };
 
@@ -33,7 +35,7 @@ export default class Demo extends React.PureComponent {
       const { leftIcon, rightIcon } = this.state;
       return (
         <Row>
-          <Col span={12} style={{ paddingTop: '60px' }}>
+          <Col span={12} style={{ paddingTop: '57px' }}>
             <RBCarousel
               animation
               autoplay={this.state.autoplay}
@@ -53,19 +55,32 @@ export default class Demo extends React.PureComponent {
               <div style={{ height: 400 }}>
                 <img
                   style={{ width: '100%', height: '100%' }}
-                  src={header2}
+                  src={header4}
                 />
               </div>
-              <div style={{ ...styles, backgroundColor: 'lightblue' }}>
-                <div className="carousel-center">
-                  <iframe
-                    style={{ width: 500 }}
-                    height="250"
-                    src="https://www.youtube.com/embed/MhkGQAoc7bc?showinfo=0"
-                    frameBorder="0"
-                    allowFullScreen
-                  />
-                </div>
+              <div style={{ height: 400 }}>
+                <img
+                  style={{ width: '100%', height: '100%' }}
+                  src={header3}
+                />
+              </div>
+              <div style={{ height: 400 }}>
+                <img
+                  style={{ width: '100%', height: '100%' }}
+                  src={header4}
+                />
+              </div>
+              <div style={{ height: 400 }}>
+                <img
+                  style={{ width: '100%', height: '100%' }}
+                  src={header5}
+                />
+              </div>
+              <div style={{ height: 400 }}>
+                <img
+                  style={{ width: '100%', height: '100%' }}
+                  src={header3}
+                />
               </div>
             </RBCarousel>
           </Col>

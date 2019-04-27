@@ -5,6 +5,12 @@ import '../../assets/dependencies';
 import Slider from '../../theme/slider';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/img/logo.png';
+import a1 from '../../assets/img/a1.jpg';
+import a2 from '../../assets/img/a2.jpg';
+import a3 from '../../assets/img/a3.jpg';
+import a4 from '../../assets/img/a4.jpg';
+import a5 from '../../assets/img/a5.jpg';
+import a6 from '../../assets/img/a6.jpg';
 
 export default class Landing extends Component {
   constructor(props) {
@@ -22,7 +28,7 @@ export default class Landing extends Component {
 
   render() {
     return (
-      <div className="landing-page">
+      <div className="landing-page gray-bg">
         <div id="wrapper" className="animate">
           <nav className="navbar header-top fixed-top navbar-expand-lg  navbar-dark bg-dark">
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
@@ -30,9 +36,9 @@ export default class Landing extends Component {
               aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon" />
             </button>
-              <Link className="nav-link" to="">
-                  <img alt="" className="img-circle" src={logo}/>
-              </Link>
+            <Link className="nav-link" to="">
+              <img alt="" className="img-circle" src={logo}/>
+            </Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
               aria-controls="navbarText"
               aria-expanded="false" aria-label="Toggle navigation">
@@ -82,7 +88,142 @@ export default class Landing extends Component {
             </div>
           </div>
         </section>
-
+        <section id="stories" className="container stories">
+          <div className="row m-b-lg">
+            <div className="col-lg-12 text-center">
+              <div className="navy-line" />
+              <h1>Success Stories</h1>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-lg-4">
+              <div className="row contact-box">
+                <div className="col-sm-4">
+                  <div className="text-center">
+                    <img alt="image" className="img-circle-lg m-t-xs img-responsive" src={a1}/>
+                    <div className="m-t-xs font-bold">Graphics designer</div>
+                  </div>
+                </div>
+                <div className="col-sm-8">
+                  <h3><strong>John Smith</strong></h3>
+                  <p><i className="fa fa-map-marker" /> Riviera State 32/106</p>
+                  <address>
+                    <strong>Twitter, Inc.</strong><br/>
+                                  795 Folsom Ave, Suite 600<br/>
+                                  San Francisco, CA 94107<br/>
+                    <abbr title="Phone">P:</abbr> (123) 456-7890
+                  </address>
+                </div>
+                <div className="clearfix" />
+              </div>
+            </div>
+            <div className="col-lg-4">
+              <div className="row contact-box">
+                <div className="col-sm-4">
+                  <div className="text-center">
+                    <img alt="image" className="img-circle-lg m-t-xs img-responsive" src={a2}/>
+                    <div className="m-t-xs font-bold">CEO</div>
+                  </div>
+                </div>
+                <div className="col-sm-8">
+                  <h3><strong>Alex Johnatan</strong></h3>
+                  <p><i className="fa fa-map-marker" /> Riviera State 32/106</p>
+                  <address>
+                    <strong>Twitter, Inc.</strong><br/>
+                                  795 Folsom Ave, Suite 600<br/>
+                                  San Francisco, CA 94107<br/>
+                    <abbr title="Phone">P:</abbr> (123) 456-7890
+                  </address>
+                </div>
+                <div className="clearfix" />
+              </div>
+            </div>
+            <div className="col-lg-4">
+              <div className="row contact-box">
+                <div className="col-sm-4">
+                  <div className="text-center">
+                    <img alt="image" className="img-circle-lg m-t-xs img-responsive" src={a3}/>
+                    <div className="m-t-xs font-bold">Marketing manager</div>
+                  </div>
+                </div>
+                <div className="col-sm-8">
+                  <h3><strong>Monica Smith</strong></h3>
+                  <p><i className="fa fa-map-marker" /> Riviera State 32/106</p>
+                  <address>
+                    <strong>Twitter, Inc.</strong><br/>
+                                  795 Folsom Ave, Suite 600<br/>
+                                  San Francisco, CA 94107<br/>
+                    <abbr title="Phone">P:</abbr> (123) 456-7890
+                  </address>
+                </div>
+                <div className="clearfix" />
+              </div>
+            </div>
+            <div className="col-lg-4">
+              <div className="row contact-box">
+                <div className="col-sm-4">
+                  <div className="text-center">
+                    <img alt="image" className="img-circle-lg m-t-xs img-responsive" src={a4}/>
+                    <div className="m-t-xs font-bold">Sales manager</div>
+                  </div>
+                </div>
+                <div className="col-sm-8">
+                  <h3><strong>Michael Zimber</strong></h3>
+                  <p><i className="fa fa-map-marker" /> Riviera State 32/106</p>
+                  <address>
+                    <strong>Twitter, Inc.</strong><br/>
+                                  795 Folsom Ave, Suite 600<br/>
+                                  San Francisco, CA 94107<br/>
+                    <abbr title="Phone">P:</abbr> (123) 456-7890
+                  </address>
+                </div>
+                <div className="clearfix" />
+              </div>
+            </div>
+            <div className="col-lg-4">
+              <div className="row contact-box">
+                <div className="col-sm-4">
+                  <div className="text-center">
+                    <img alt="image" className="img-circle-lg m-t-xs img-responsive" src={a5} />
+                    <div className="m-t-xs font-bold">Graphics designer</div>
+                  </div>
+                </div>
+                <div className="col-sm-8">
+                  <h3><strong>Sandra Smith</strong></h3>
+                  <p><i className="fa fa-map-marker" /> Riviera State 32/106</p>
+                  <address>
+                    <strong>Twitter, Inc.</strong><br/>
+                          795 Folsom Ave, Suite 600<br/>
+                          San Francisco, CA 94107<br/>
+                    <abbr title="Phone">P:</abbr> (123) 456-7890
+                  </address>
+                </div>
+                <div className="clearfix" />
+              </div>
+            </div>
+            <div className="col-lg-4">
+              <div className="row contact-box">
+                <div className="col-sm-4">
+                  <div className="text-center">
+                    <img alt="image" className="img-circle-lg m-t-xs img-responsive" src={a6}/>
+                    <div className="m-t-xs font-bold">Sales manager</div>
+                  </div>
+                </div>
+                <div className="col-sm-8">
+                  <h3><strong>Janet Carton</strong></h3>
+                  <p><i className="fa fa-map-marker" /> Riviera State 32/106</p>
+                  <address>
+                    <strong>Twitter, Inc.</strong><br/>
+                              795 Folsom Ave, Suite 600<br/>
+                              San Francisco, CA 94107<br/>
+                    <abbr title="Phone">P:</abbr> (123) 456-7890
+                  </address>
+                </div>
+                <div className="clearfix" />
+              </div>
+            </div>
+          </div>
+        </section>
         <section id="about-us" className="container features">
           <div className="row">
             <div className="col-lg-12 text-center">
