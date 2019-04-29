@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://mir-nawaz.github.io/react-inspinia",
+  "homepage": "https://mir-nawaz.github.io/react-inspinia",
   "dependencies": {
     "animate.css": "^3.7.0",
     "antd": "^3.15.2",
@@ -34,6 +34,7 @@
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
+    "now-start": "cd build && serve -s ./",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
@@ -54,6 +55,7 @@
   ],
   "devDependencies": {
     "eslint": "5.12.0",
-    "react-scripts": "^2.1.8"
+    "react-scripts": "^2.1.8",
+    "serve": "^11.0.0"
   }
 }

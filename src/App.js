@@ -8,7 +8,7 @@ window.$ = jQuery;
 class App extends Component {
   render() {
     return (
-      <Router>
+      <Router  basename={'/react-inspinia'}>
         <div className="body">
           <Routes/>
         </div>
