@@ -8,8 +8,8 @@ self.__precacheManifest = [
     "url": "/react-inspinia/static/js/0.fd40c2d1.chunk.js"
   },
   {
-    "revision": "0aeace979bb77469c1b9",
-    "url": "/react-inspinia/static/js/main.dfc8b621.chunk.js"
+    "revision": "422c59fe197579f2a653",
+    "url": "/react-inspinia/static/js/main.379522de.chunk.js"
   },
   {
     "revision": "05b16ef8c4ecd5331867",
@@ -124,16 +124,16 @@ self.__precacheManifest = [
     "url": "/react-inspinia/static/media/4.dd77cc9a.png"
   },
   {
-    "revision": "448c34a56d699c29117adc64c43affeb",
-    "url": "/react-inspinia/static/media/glyphicons-halflings-regular.448c34a5.woff2"
-  },
-  {
     "revision": "f4769f9bdb7466be65088239c12046d1",
     "url": "/react-inspinia/static/media/glyphicons-halflings-regular.f4769f9b.eot"
   },
   {
     "revision": "fa2772327f55d8198301fdb8bcfc8158",
     "url": "/react-inspinia/static/media/glyphicons-halflings-regular.fa277232.woff"
+  },
+  {
+    "revision": "448c34a56d699c29117adc64c43affeb",
+    "url": "/react-inspinia/static/media/glyphicons-halflings-regular.448c34a5.woff2"
   },
   {
     "revision": "85efa900c0fc12fee15a5398deba06e8",
@@ -192,7 +192,7 @@ self.__precacheManifest = [
     "url": "/react-inspinia/static/media/react-bootstrap-carousel.2fe6d179.svg"
   },
   {
-    "revision": "0aeace979bb77469c1b9",
+    "revision": "422c59fe197579f2a653",
     "url": "/react-inspinia/static/css/main.5092c4d6.chunk.css"
   },
   {
@@ -204,7 +204,7 @@ self.__precacheManifest = [
     "url": "/react-inspinia/static/css/4.d221e1de.chunk.css"
   },
   {
-    "revision": "f614bf579b12396a646c91d24d3a775c",
+    "revision": "701ac9635681f646c2b6ad973db8a1db",
     "url": "/react-inspinia/index.html"
   }
 ];
