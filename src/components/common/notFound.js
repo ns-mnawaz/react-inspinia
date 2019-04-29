@@ -17,10 +17,10 @@ export default class NotFound extends Component {
     return (
       <div id="wrapper">
         <div className="gray-bg" style={{ height: '100vh' }}>
-          <div className="middle-box text-center loginscreen animated fadeInDown">
-            <h1 className="logo-name">IN+</h1>
-            <h3>Route Not Found</h3>
-            <p>Route Not Found</p>
+          <div className="middle-box text-center loginscreen animated fadeIn">
+            <h1 className="logo-name"> M+ </h1>
+            <h3> Get Hired! </h3>
+            <p> Route Not Found </p>
           </div>
         </div>
       </div>

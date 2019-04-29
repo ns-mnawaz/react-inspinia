@@ -58,7 +58,7 @@ export default class Landing extends Component {
                   <a className="nav-link" href="#about-us">About us</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#contact">Contact</a>
+                  <Link className="nav-link" to="/register">Register</Link>
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" to="/login">Login</Link>
