@@ -9,7 +9,7 @@ export default {
     { id: '5', path: '', icon: 'pie-chart', label: 'User', parent: '0' },
     { id: '6', path: '/app/page1', icon: 'building-o', label: 'Page 1', parent: '5' },
     { id: '7', path: '/app/page1', icon: 'building-o', label: 'Page 1 1', parent: '6' },
-    { id: '9', path: '/app/page1', icon: 'building-o', label: 'Page 2', parent: '5' }
+    { id: '9', path: '/app/profile', icon: 'user', label: 'Profile', parent: '5' }
   ],
   navMenu: [
     { path: '/app/profile', label: 'Profile' },

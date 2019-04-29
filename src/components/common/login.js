@@ -58,7 +58,9 @@ export default class Login extends Component {
               label="<span class='checkbox-label'>Remember Me</span>"
             />
           </div>
-          <button type="button" id="btnLogin" className="btn btn-primary block full-width m-b">{'Login'}</button>
+          <Link to="/app/home">
+            <button type="button" id="btnLogin" className="btn btn-primary block full-width m-b" >{'Login'}</button>
+          </Link>
           <Link to="/activate">
             <small>Forgot Password?</small>
           </Link>
@@ -77,5 +79,4 @@ export default class Login extends Component {
   handleChange = (e, value) => {
     this.setState({ [e.target.name]: value });
   };
-
 }
