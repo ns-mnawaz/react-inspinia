@@ -12,8 +12,8 @@ self.__precacheManifest = [
     "url": "/react-inspinia/static/js/main.335a7bc5.chunk.js"
   },
   {
-    "revision": "8e85c025c96995709635",
-    "url": "/react-inspinia/static/js/runtime~main.9954d546.js"
+    "revision": "dcf3a71962b4a572c7e7",
+    "url": "/react-inspinia/static/js/runtime~main.47e3029d.js"
   },
   {
     "revision": "a2a383875777577b0676",
@@ -40,8 +40,8 @@ self.__precacheManifest = [
     "url": "/react-inspinia/static/js/6.53ee9950.chunk.js"
   },
   {
-    "revision": "ca6380dc16cbcf2e71ee",
-    "url": "/react-inspinia/static/js/7.72c7df0a.chunk.js"
+    "revision": "81c131e77fba204ee901",
+    "url": "/react-inspinia/static/js/7.cb906fc8.chunk.js"
   },
   {
     "revision": "05666b7ead309bfd7cff",
@@ -188,24 +188,24 @@ self.__precacheManifest = [
     "url": "/react-inspinia/static/media/shattered.ea231622.png"
   },
   {
-    "revision": "c5a509acee8aab3a1f62e16ea1204ffc",
-    "url": "/react-inspinia/static/media/avatar_all.c5a509ac.png"
-  },
-  {
     "revision": "f2f2de96e14a40255e93ab5fab29916b",
     "url": "/react-inspinia/static/media/header_two.f2f2de96.jpg"
+  },
+  {
+    "revision": "c5a509acee8aab3a1f62e16ea1204ffc",
+    "url": "/react-inspinia/static/media/avatar_all.c5a509ac.png"
   },
   {
     "revision": "2182330384ebbad826821fdf8e84efe5",
     "url": "/react-inspinia/static/media/react-bootstrap-carousel.21823303.eot"
   },
   {
-    "revision": "f7448c0408e7a78012a82def0fb9e2fe",
-    "url": "/react-inspinia/static/media/react-bootstrap-carousel.f7448c04.ttf"
-  },
-  {
     "revision": "c746c4882df00af3b0a7a3b1616bf295",
     "url": "/react-inspinia/static/media/react-bootstrap-carousel.c746c488.woff"
+  },
+  {
+    "revision": "f7448c0408e7a78012a82def0fb9e2fe",
+    "url": "/react-inspinia/static/media/react-bootstrap-carousel.f7448c04.ttf"
   },
   {
     "revision": "2fe6d179ea5aa1ceab26113e77e13da4",
@@ -224,7 +224,7 @@ self.__precacheManifest = [
     "url": "/react-inspinia/static/css/4.d82e1517.chunk.css"
   },
   {
-    "revision": "d3a97a02aff46da525f2189b53839a8b",
+    "revision": "b827c3dac74df188419448ca54815ead",
     "url": "/react-inspinia/index.html"
   }
 ];
