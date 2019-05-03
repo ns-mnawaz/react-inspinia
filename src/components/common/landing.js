@@ -30,7 +30,7 @@ export default class Landing extends Component {
     return (
       <div className="landing-page gray-bg">
         <div id="wrapper" className="animate">
-          <nav className="navbar header-top fixed-top navbar-expand-lg  navbar-dark bg-dark">
+          <nav className="navbar header-top fixed-top navbar-expand-lg  navbar-dark gray-bg">
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
               aria-controls="navbarText"
               aria-expanded="false" aria-label="Toggle navigation">
@@ -47,16 +47,16 @@ export default class Landing extends Component {
             <div className="collapse navbar-collapse" id="navbarText">
               <ul className="navbar-nav ml-md-auto d-md-flex">
                 <li className="nav-item">
-                  <Link className="nav-link" to="/">
+                  <Link className="nav-link menu-tabs" to="/">
                           Home
                     <span className="sr-only">(current)</span>
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/register">Register</Link>
+                  <Link className="nav-link menu-tabs" to="/register">Register</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/login">Login</Link>
+                  <Link className="nav-link menu-tabs" to="/login">Login</Link>
                 </li>
               </ul>
             </div>
@@ -100,8 +100,8 @@ export default class Landing extends Component {
                   </div>
                 </div>
                 <div className="col-sm-8">
-                  <h3><strong>John Smith</strong></h3>
-                  <p><i className="fa fa-map-marker" /> Riviera State 32/106</p>
+                  <h3><strong>Abdul Noor </strong></h3>
+                  <p><i className="fa fa-map-marker" /> Sindh State 32/106</p>
                   <address>
                     <strong>Twitter, Inc.</strong><br/>
                                   795 Folsom Ave, Suite 600<br/>
@@ -121,8 +121,8 @@ export default class Landing extends Component {
                   </div>
                 </div>
                 <div className="col-sm-8">
-                  <h3><strong>Alex Johnatan</strong></h3>
-                  <p><i className="fa fa-map-marker" /> Riviera State 32/106</p>
+                  <h3><strong>Raghib Ahmed</strong></h3>
+                  <p><i className="fa fa-map-marker" /> Sindh State 32/106</p>
                   <address>
                     <strong>Twitter, Inc.</strong><br/>
                                   795 Folsom Ave, Suite 600<br/>
@@ -142,8 +142,8 @@ export default class Landing extends Component {
                   </div>
                 </div>
                 <div className="col-sm-8">
-                  <h3><strong>Monica Smith</strong></h3>
-                  <p><i className="fa fa-map-marker" /> Riviera State 32/106</p>
+                  <h3><strong>Abdus Samad</strong></h3>
+                  <p><i className="fa fa-map-marker" /> Sindh State 32/106</p>
                   <address>
                     <strong>Twitter, Inc.</strong><br/>
                                   795 Folsom Ave, Suite 600<br/>
@@ -163,12 +163,12 @@ export default class Landing extends Component {
                   </div>
                 </div>
                 <div className="col-sm-8">
-                  <h3><strong>Michael Zimber</strong></h3>
-                  <p><i className="fa fa-map-marker" /> Riviera State 32/106</p>
+                  <h3><strong>Tamam</strong></h3>
+                  <p><i className="fa fa-map-marker" /> Sindh State 32/106</p>
                   <address>
                     <strong>Twitter, Inc.</strong><br/>
                                   795 Folsom Ave, Suite 600<br/>
-                                  San Francisco, CA 94107<br/>
+                    Sindh, PK 94107<br/>
                     <abbr title="Phone">P:</abbr> (123) 456-7890
                   </address>
                 </div>
@@ -184,12 +184,12 @@ export default class Landing extends Component {
                   </div>
                 </div>
                 <div className="col-sm-8">
-                  <h3><strong>Sandra Smith</strong></h3>
-                  <p><i className="fa fa-map-marker" /> Riviera State 32/106</p>
+                  <h3><strong>Salik</strong></h3>
+                  <p><i className="fa fa-map-marker" /> Sindh State 32/106</p>
                   <address>
                     <strong>Twitter, Inc.</strong><br/>
                           795 Folsom Ave, Suite 600<br/>
-                          San Francisco, CA 94107<br/>
+                    Sindh, PK 94107<br/>
                     <abbr title="Phone">P:</abbr> (123) 456-7890
                   </address>
                 </div>
@@ -205,12 +205,12 @@ export default class Landing extends Component {
                   </div>
                 </div>
                 <div className="col-sm-8">
-                  <h3><strong>Janet Carton</strong></h3>
-                  <p><i className="fa fa-map-marker" /> Riviera State 32/106</p>
+                  <h3><strong>Muheet</strong></h3>
+                  <p><i className="fa fa-map-marker" /> Sindh State 32/106</p>
                   <address>
                     <strong>Twitter, Inc.</strong><br/>
                               795 Folsom Ave, Suite 600<br/>
-                              San Francisco, CA 94107<br/>
+                              Sindh, PK 94107<br/>
                     <abbr title="Phone">P:</abbr> (123) 456-7890
                   </address>
                 </div>

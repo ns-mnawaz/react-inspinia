@@ -6,7 +6,6 @@ import Row from './row';
 import header1 from '../assets/img/landing/landing_1.jpg';
 import header3 from '../assets/img/landing/landing_2.jpg';
 import header4 from '../assets/img/landing/landing_3.jpg';
-import header5 from '../assets/img/landing/landing_4.jpg';
 
 const styles = { height: 400, width: '100%' };
 
@@ -39,44 +38,44 @@ export default class Demo extends React.PureComponent {
             <RBCarousel
               animation
               autoplay={this.state.autoplay}
-              slideshowSpeed={2000}
+              slideshowSpeed={4000}
               leftIcon={leftIcon}
               rightIcon={rightIcon}
               onSelect={this.onSelect}
               ref={(r) => (this.slider = r)}
               version={4}
             >
-              <div style={{ height: 400 }}>
+              <div style={styles}>
                 <img
                   style={{ width: '100%', height: '100%' }}
                   src={header1}
                 />
               </div>
-              <div style={{ height: 400 }}>
+              <div style={styles}>
                 <img
                   style={{ width: '100%', height: '100%' }}
                   src={header4}
                 />
               </div>
-              <div style={{ height: 400 }}>
+              <div style={styles}>
                 <img
                   style={{ width: '100%', height: '100%' }}
                   src={header3}
                 />
               </div>
-              <div style={{ height: 400 }}>
+              <div style={styles}>
                 <img
                   style={{ width: '100%', height: '100%' }}
                   src={header4}
                 />
               </div>
-              <div style={{ height: 400 }}>
+              <div style={styles}>
                 <img
                   style={{ width: '100%', height: '100%' }}
-                  src={header5}
+                  src={header1}
                 />
               </div>
-              <div style={{ height: 400 }}>
+              <div style={styles}>
                 <img
                   style={{ width: '100%', height: '100%' }}
                   src={header3}

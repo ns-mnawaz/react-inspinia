@@ -210,7 +210,7 @@ class Home extends Component {
                         </a>
                         <div className="media-body ">
                           <small className="pull-right">5m ago</small>
-                          <strong>Monica Smith</strong> posted a new blog. <br/>
+                          <strong>Raghib</strong> posted a new blog. <br/>
                           <small className="text-muted">Today 5:60 pm - 12.06.2014</small>
 
                         </div>
@@ -222,7 +222,7 @@ class Home extends Component {
                         </a>
                         <div className="media-body ">
                           <small className="pull-right">2h ago</small>
-                          <strong>Mark Johnson</strong> posted message on <strong>Monica
+                          <strong>Abdul Raheem</strong> posted message on <strong>Monica
                                   Smith</strong> site. <br/>
                           <small className="text-muted">Today 2:10 pm - 12.06.2014</small>
                         </div>
@@ -233,7 +233,7 @@ class Home extends Component {
                         </a>
                         <div className="media-body ">
                           <small className="pull-right">2h ago</small>
-                          <strong>Janet Rosowski</strong> add 1 photo on <strong>Monica Smith</strong>. <br/>
+                          <strong>Salik</strong> add 1 photo on <strong>Raheem</strong>. <br/>
                           <small className="text-muted">2 days ago at 8:30am</small>
                         </div>
                       </div>
@@ -243,8 +243,8 @@ class Home extends Component {
                         </a>
                         <div className="media-body ">
                           <small className="pull-right text-navy">5h ago</small>
-                          <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica
-                                  Smith</strong>. <br/>
+                          <strong>Suwayd</strong> started following <strong>Raghib
+                                  Khan</strong>. <br/>
                           <small className="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
                           <div className="actions">
                             <a className="btn btn-xs btn-white"><i className="fa fa-thumbs-up" /> Like </a>
@@ -258,7 +258,7 @@ class Home extends Component {
                         </a>
                         <div className="media-body ">
                           <small className="pull-right">2h ago</small>
-                          <strong>Kim Smith</strong> posted message on <strong>Monica Smith</strong> site. <br/>
+                          <strong>Abdus Samad</strong> posted message on <strong>Kazim</strong> site. <br/>
                           <small className="text-muted">Yesterday 5:20 pm - 12.06.2014</small>
                           <div className="well">
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
@@ -277,7 +277,7 @@ class Home extends Component {
                         </a>
                         <div className="media-body ">
                           <small className="pull-right">23h ago</small>
-                          <strong>Monica Smith</strong> love <strong>Kim Smith</strong>. <br/>
+                          <strong>Marwan</strong> love <strong>Abdul Samad</strong>. <br/>
                           <small className="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
                         </div>
                       </div>
@@ -287,7 +287,7 @@ class Home extends Component {
                         </a>
                         <div className="media-body ">
                           <small className="pull-right">46h ago</small>
-                          <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>. <br/>
+                          <strong>Asim</strong> started following <strong>Ashwaq</strong>. <br/>
                           <small className="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
                         </div>
                       </div>
@@ -403,7 +403,7 @@ class Home extends Component {
                         <small>21 hour ago</small>
                       </div>
                       <div className="col-sm-7 content">
-                        <p className="m-b-xs"><strong>Go to the doctor dr Smith</strong></p>
+                        <p className="m-b-xs"><strong>Go to the doctor dr Zaighum</strong></p>
                         <p>
                                   Find some issue and go to doctor.
                         </p>

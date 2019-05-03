@@ -9559,3 +9559,9 @@ body.md-skin {
 .ibox-title .float-right {
   margin-right: -75px;
 }
+.menu-tabs{
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  padding-top: 12px !important;
+  color: #676a6c !important;
+}
