@@ -10,7 +10,8 @@ import { correctHeight, detectBody } from './theme/helpers/helpers';
 import WaitingComponent from './theme/waiting';
 
 const Dashboard = lazy(() => import('./components/pages/dashboard'));
-const Page1 = lazy(() => import('./components/pages/page1'));
+const Inbox = lazy(() => import('./components/pages/inbox'));
+const Compose = lazy(() => import('./components/pages/compose'));
 const Home = lazy(() => import('./components/pages/home'));
 const Profile = lazy(() => import('./components/pages/profile'));
 const Permissions = lazy(() => import('./components/pages/permissions'));
@@ -41,7 +42,8 @@ export default class AppRoutes extends Component {
           <TopHeader />
           <Switch>
             <Route path={`${this.state.match.url}`} exact component={Home} />
-            <Route path={`${this.state.match.url}/page1`} exact component={WaitingComponent(Page1)} />
+            <Route path={`${this.state.match.url}/inbox`} exact component={WaitingComponent(Inbox)} />
+            <Route path={`${this.state.match.url}/compose`} exact component={WaitingComponent(Compose)} />
             <Route path={`${this.state.match.url}/profile`} exact component={WaitingComponent(Profile)} />
             <Route path={`${this.state.match.url}/dashboard`} exact component={WaitingComponent(Dashboard)} />
             <Route path={`${this.state.match.url}/home`} exact component={WaitingComponent(Home)} />

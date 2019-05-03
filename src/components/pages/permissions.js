@@ -6,7 +6,6 @@ import Tree from 'rc-tree';
 import { PropTypes } from 'prop-types';
 
 import Content from '../../theme/content';
-import Header from '../../theme/header';
 import 'rc-tree/assets/index.css';
 import { getTreePermission } from '../../helpers/permissions';
 import list from '../../constants/list';
@@ -36,7 +35,6 @@ class Permissions extends Component {
     render() {
       return (
         <div>
-          <Header title="Permissions"/>
           <Content>
             <div className="row">
               <div className="col-lg-6">

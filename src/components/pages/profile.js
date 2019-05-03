@@ -2,9 +2,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { Link } from 'react-router-dom';
 import Content from '../../theme/content';
-import Header from '../../theme/header';
 import a1 from '../../assets/img/a1.jpg';
 import a2 from '../../assets/img/a2.jpg';
 import a3 from '../../assets/img/a3.jpg';
@@ -18,9 +16,6 @@ class Profile extends Component {
   render() {
     return (
       <div>
-        <Header title="Profile">
-          <Link to="/app/profile" className="btn btn-warning btn-sm">Profile</Link>
-        </Header>
         <Content>
           <div className="row m-b-lg m-t-lg">
             <div className="col-md-6">
