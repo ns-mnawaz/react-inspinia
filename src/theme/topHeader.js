@@ -72,9 +72,9 @@ class TopHeader extends Component {
                 <li className="divider" />
                 <li>
                   <div className="text-center link-block">
-                    <a href="mailbox.html">
+                    <Link to="/app/inbox">
                       <i className="fa fa-envelope" /> <strong>Read All Messages</strong>
-                    </a>
+                    </Link>
                   </div>
                 </li>
               </ul>
