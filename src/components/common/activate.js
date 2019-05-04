@@ -7,13 +7,15 @@ import { correctHeight, detectBody } from '../../theme/helpers/helpers';
 import '../../assets/dependencies';
 import logo from '../../assets/img/logo.png';
 import CopyRight from '../../theme/copyRight';
+import { toastr } from 'react-redux-toastr';
+import { withRouter } from 'react-router-dom';
 
 EnhancedSwitch.propTypes = {
   ...EnhancedSwitch.propTypes,
   cursor: PropTypes.string
 };
 
-export default class Activate extends Component {
+class Activate extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -42,7 +44,7 @@ export default class Activate extends Component {
             <span className="input-group-addon"><i className="fa fa-at"/></span>
             <input type="email" name="email" className="form-control" placeholder={'Email'} required=""/>
           </div>
-          <button type="button" id="btnLogin" className="btn btn-primary block full-width m-b">Activate</button>
+          <button type="button" id="btnLogin" className="btn btn-primary block full-width m-b" onClick={this.activate}>Activate</button>
           <Link to="/register">
             <small>Don't have an account?</small>
           </Link>
@@ -60,4 +62,9 @@ export default class Activate extends Component {
   handleChange = (e, value) => {
     this.setState({ [e.target.name]: value });
   };
+    activate = () => {
+      toastr.success('Get Hired!', 'You account is activated. Please login to see magic in action.');
+      this.props.history.push('/login');
+    }
 }
+export default withRouter(Activate);
