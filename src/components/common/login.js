@@ -1,26 +1,34 @@
 import $ from 'jquery';
-import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux'
 import { Link } from 'react-router-dom';
 import { Checkbox } from 'react-icheck';
+import React, { Component } from 'react';
+import { bindActionCreators } from 'redux';
 import EnhancedSwitch from 'react-icheck/lib/EnhancedSwitch';
+
 import { correctHeight, detectBody } from '../../theme/helpers/helpers';
 import '../../assets/dependencies';
 import logo from '../../assets/img/logo.png';
 import CopyRight from '../../theme/copyRight';
+import { login } from '../../redux/actions/user';
 
 EnhancedSwitch.propTypes = {
   ...EnhancedSwitch.propTypes,
   cursor: PropTypes.string
 };
 
-export default class Login extends Component {
+class Login extends Component {
   constructor(props) {
     super(props);
     this.state = {
       checked: false
     };
   }
+
+  login = () =>{
+    this.props.login({username: "admin", password: "admin"})
+  };
 
   componentDidMount() {
     // eslint-disable-next-line func-names
@@ -31,6 +39,7 @@ export default class Login extends Component {
   }
 
   render() {
+    console.log(this.props.user);
     return (
       <div className="gray-bg" style={{ height: '100vh' }} >
         <div className="middle-box text-center loginscreen animated fadeInDown" style={{ paddingBottom: '40px' }}>
@@ -58,9 +67,7 @@ export default class Login extends Component {
               label="<span class='checkbox-label'>Remember Me</span>"
             />
           </div>
-          <Link to="/app/home">
-            <button type="button" id="btnLogin" className="btn btn-primary block full-width m-b" >{'Login'}</button>
-          </Link>
+          <button type="button" id="btnLogin" className="btn btn-primary block full-width m-b" onClick={this.login}>{'Login'}</button>
           <Link to="/activate">
             <small>Forgot Password?</small>
           </Link>
@@ -80,3 +87,8 @@ export default class Login extends Component {
     this.setState({ [e.target.name]: value });
   };
 }
+
+const mapStateToProps = state => ({ user: state.user })
+const mapDispatchToProps = dispatch => bindActionCreators({ login }, dispatch)
+
+export default connect(mapStateToProps, mapDispatchToProps)(Login)
