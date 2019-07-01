@@ -3,10 +3,10 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import Tree from 'rc-tree';
+import DatePicker from 'react-datepicker';
 import { PropTypes } from 'prop-types';
 
 import Content from '../../theme/content';
-import 'rc-tree/assets/index.css';
 import { getTreePermission } from '../../helpers/permissions';
 import list from '../../constants/list';
 
@@ -22,9 +22,11 @@ class Permissions extends Component {
       const keys = props.keys;
       this.state = {
         defaultCheckedKeys: keys,
-        treeData: getTreePermission(list.menu)
+        treeData: getTreePermission(list.menu),
+        startDate: new Date()
       };
     }
+
     onExpand = (expandedKeys) => {
       console.log('onExpand', expandedKeys);
     };
@@ -56,11 +58,33 @@ class Permissions extends Component {
                   </div>
                 </div>
               </div>
+              <div className="col-lg-6">
+                <div className="form-group input-group m-b">
+                  <h3>Date Picker</h3>
+                  <div className="input-group">
+                    <span className="input-group-addon"><i className="fa fa-calendar"/></span>
+                    <DatePicker
+                      className="form-control"
+                      selected={this.state.startDate}
+                      onChange={this.handleChange}
+                      dateFormat="MM/dd/yyyy h:mm aa"
+                      showTimeInput
+                      placeholderText="Click to select a date"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </Content>
         </div>
       );
     }
+    handleChange = (date) => {
+      console.log(date);
+      this.setState({
+        startDate: date
+      });
+    };
 }
 
 const mapStateToProps = (state) => ({ teste: state.teste });
