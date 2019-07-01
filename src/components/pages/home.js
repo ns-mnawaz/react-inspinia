@@ -206,7 +206,7 @@ class Home extends Component {
 
                       <div className="feed-element">
                         <a href="profile.html" className="pull-left">
-                          <img alt="image" className="img-circle" src={a1}/>
+                          <img alt="show test" className="img-circle" src={a1}/>
                         </a>
                         <div className="media-body ">
                           <small className="pull-right">5m ago</small>
@@ -218,7 +218,7 @@ class Home extends Component {
 
                       <div className="feed-element">
                         <a href="profile.html" className="pull-left">
-                          <img alt="image" className="img-circle" src={a2}/>
+                          <img alt="show test" className="img-circle" src={a2}/>
                         </a>
                         <div className="media-body ">
                           <small className="pull-right">2h ago</small>
@@ -229,7 +229,7 @@ class Home extends Component {
                       </div>
                       <div className="feed-element">
                         <a href="profile.html" className="pull-left">
-                          <img alt="image" className="img-circle" src={a3}/>
+                          <img alt="show test" className="img-circle" src={a3}/>
                         </a>
                         <div className="media-body ">
                           <small className="pull-right">2h ago</small>
@@ -239,7 +239,7 @@ class Home extends Component {
                       </div>
                       <div className="feed-element">
                         <a href="profile.html" className="pull-left">
-                          <img alt="image" className="img-circle" src={a4}/>
+                          <img alt="show test" className="img-circle" src={a4}/>
                         </a>
                         <div className="media-body ">
                           <small className="pull-right text-navy">5h ago</small>
@@ -254,7 +254,7 @@ class Home extends Component {
                       </div>
                       <div className="feed-element">
                         <a href="profile.html" className="pull-left">
-                          <img alt="image" className="img-circle" src={a5}/>
+                          <img alt="show test" className="img-circle" src={a5}/>
                         </a>
                         <div className="media-body ">
                           <small className="pull-right">2h ago</small>
@@ -273,7 +273,7 @@ class Home extends Component {
                       </div>
                       <div className="feed-element">
                         <a href="profile.html" className="pull-left">
-                          <img alt="image" className="img-circle" src={a6}/>
+                          <img alt="show test" className="img-circle" src={a6}/>
                         </a>
                         <div className="media-body ">
                           <small className="pull-right">23h ago</small>
@@ -283,7 +283,7 @@ class Home extends Component {
                       </div>
                       <div className="feed-element">
                         <a href="profile.html" className="pull-left">
-                          <img alt="image" className="img-circle" src={a2}/>
+                          <img alt="show test" className="img-circle" src={a2}/>
                         </a>
                         <div className="media-body ">
                           <small className="pull-right">46h ago</small>

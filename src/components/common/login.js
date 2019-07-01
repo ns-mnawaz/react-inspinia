@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux'
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import { Checkbox } from 'react-icheck';
 import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
@@ -28,6 +28,7 @@ class Login extends Component {
 
   login = () =>{
     this.props.login({username: "admin", password: "admin"})
+    this.props.history.push('/app/home');
   };
 
   componentDidMount() {
@@ -39,7 +40,6 @@ class Login extends Component {
   }
 
   render() {
-    console.log(this.props.user);
     return (
       <div className="gray-bg" style={{ height: '100vh' }} >
         <div className="middle-box text-center loginscreen animated fadeInDown" style={{ paddingBottom: '40px' }}>
@@ -89,6 +89,6 @@ class Login extends Component {
 }
 
 const mapStateToProps = state => ({ user: state.user })
-const mapDispatchToProps = dispatch => bindActionCreators({ login }, dispatch)
+const mapDispatchToProps = dispatch => bindActionCreators({ login }, dispatch);
 
-export default connect(mapStateToProps, mapDispatchToProps)(Login)
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Login));

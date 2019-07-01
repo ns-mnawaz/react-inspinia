@@ -20,7 +20,7 @@ class Contacts extends Component {
             <div className="row contact-box">
               <div className="col-sm-4">
                 <div className="text-center">
-                  <img alt="image" className="img-circle-lg m-t-xs img-responsive" src={a1}/>
+                  <img alt="show test" className="img-circle-lg m-t-xs img-responsive" src={a1}/>
                   <div className="m-t-xs font-bold">Graphics designer</div>
                 </div>
               </div>
@@ -41,7 +41,7 @@ class Contacts extends Component {
             <div className="row contact-box">
               <div className="col-sm-4">
                 <div className="text-center">
-                  <img alt="image" className="img-circle-lg m-t-xs img-responsive" src={a2}/>
+                  <img alt="show test" className="img-circle-lg m-t-xs img-responsive" src={a2}/>
                   <div className="m-t-xs font-bold">CEO</div>
                 </div>
               </div>
@@ -62,7 +62,7 @@ class Contacts extends Component {
             <div className="row contact-box">
               <div className="col-sm-4">
                 <div className="text-center">
-                  <img alt="image" className="img-circle-lg m-t-xs img-responsive" src={a3}/>
+                  <img alt="show test" className="img-circle-lg m-t-xs img-responsive" src={a3}/>
                   <div className="m-t-xs font-bold">Marketing manager</div>
                 </div>
               </div>
@@ -83,7 +83,7 @@ class Contacts extends Component {
             <div className="row contact-box">
               <div className="col-sm-4">
                 <div className="text-center">
-                  <img alt="image" className="img-circle-lg m-t-xs img-responsive" src={a4}/>
+                  <img alt="show test" className="img-circle-lg m-t-xs img-responsive" src={a4}/>
                   <div className="m-t-xs font-bold">Sales manager</div>
                 </div>
               </div>
@@ -104,7 +104,7 @@ class Contacts extends Component {
             <div className="row contact-box">
               <div className="col-sm-4">
                 <div className="text-center">
-                  <img alt="image" className="img-circle-lg m-t-xs img-responsive" src={a5} />
+                  <img alt="show test" className="img-circle-lg m-t-xs img-responsive" src={a5} />
                   <div className="m-t-xs font-bold">Graphics designer</div>
                 </div>
               </div>
@@ -125,7 +125,7 @@ class Contacts extends Component {
             <div className="row contact-box">
               <div className="col-sm-4">
                 <div className="text-center">
-                  <img alt="image" className="img-circle-lg m-t-xs img-responsive" src={a7} />
+                  <img alt="show test" className="img-circle-lg m-t-xs img-responsive" src={a7} />
                   <div className="m-t-xs font-bold">Developer</div>
                 </div>
               </div>
@@ -146,7 +146,7 @@ class Contacts extends Component {
             <div className="row contact-box">
               <div className="col-sm-4">
                 <div className="text-center">
-                  <img alt="image" className="img-circle-lg m-t-xs img-responsive" src={a6}/>
+                  <img alt="show test" className="img-circle-lg m-t-xs img-responsive" src={a6}/>
                   <div className="m-t-xs font-bold">Sales manager</div>
                 </div>
               </div>

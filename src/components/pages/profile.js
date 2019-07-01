@@ -109,16 +109,16 @@ class Profile extends Component {
                                     anything embarrassing
                   </p>
                   <div className="user-friends">
-                    <a href=""><img alt="image" className="img-circle" src={a4}/></a>
-                    <a href=""><img alt="image" className="img-circle" src={a3}/></a>
-                    <a href=""><img alt="image" className="img-circle" src={a2}/></a>
-                    <a href=""><img alt="image" className="img-circle" src={a1}/></a>
-                    <a href=""><img alt="image" className="img-circle" src={a6}/></a>
-                    <a href=""><img alt="image" className="img-circle" src={a5}/></a>
-                    <a href=""><img alt="image" className="img-circle" src={a4}/></a>
-                    <a href=""><img alt="image" className="img-circle" src={a3}/></a>
-                    <a href=""><img alt="image" className="img-circle" src={a2}/></a>
-                    <a href=""><img alt="image" className="img-circle" src={a1}/></a>
+                    <a href=""><img alt="show 1" className="img-circle" src={a4}/></a>
+                    <a href=""><img alt="show 2" className="img-circle" src={a3}/></a>
+                    <a href=""><img alt="show 3" className="img-circle" src={a2}/></a>
+                    <a href=""><img alt="show 4" className="img-circle" src={a1}/></a>
+                    <a href=""><img alt="show 5" className="img-circle" src={a6}/></a>
+                    <a href=""><img alt="show 6" className="img-circle" src={a5}/></a>
+                    <a href=""><img alt="show 7" className="img-circle" src={a4}/></a>
+                    <a href=""><img alt="show 9" className="img-circle" src={a3}/></a>
+                    <a href=""><img alt="show 01" className="img-circle" src={a2}/></a>
+                    <a href=""><img alt="show 11" className="img-circle" src={a1}/></a>
                   </div>
                 </div>
               </div>
@@ -174,7 +174,7 @@ class Profile extends Component {
                 </div>
                 <div className="social-avatar">
                   <a href="" className="pull-left">
-                    <img alt="image" src={a5}/>
+                    <img alt="show test" src={a5}/>
                   </a>
                   <div className="media-body">
                     <a href="#">
@@ -199,7 +199,7 @@ class Profile extends Component {
                 <div className="social-footer">
                   <div className="social-comment">
                     <a href="" className="pull-left">
-                      <img alt="image" src={a5}/>
+                      <img alt="show test" src={a5}/>
                     </a>
                     <div className="media-body">
                       <a href="#">
@@ -214,7 +214,7 @@ class Profile extends Component {
 
                   <div className="social-comment">
                     <a href="" className="pull-left">
-                      <img alt="image" src={a5}/>
+                      <img alt="show test" src={a5}/>
                     </a>
                     <div className="media-body">
                       <a href="#">
@@ -229,7 +229,7 @@ class Profile extends Component {
 
                   <div className="social-comment">
                     <a href="" className="pull-left">
-                      <img alt="image" src={profile}/>
+                      <img alt="show test" src={profile}/>
                     </a>
                     <div className="media-body">
                       <textarea className="form-control" placeholder="Write comment..." />
@@ -252,7 +252,7 @@ class Profile extends Component {
                 </div>
                 <div className="social-avatar">
                   <a href="" className="pull-left">
-                    <img alt="image" src={a5}/>
+                    <img alt="show test" src={a5}/>
                   </a>
                   <div className="media-body">
                     <a href="#">
@@ -274,7 +274,7 @@ class Profile extends Component {
                                     in their infancy. Packages and web page editors now use Lorem Ipsum as their
                                     default model text.
                   </p>
-                  <img src={gallery} className="img-responsive"/>
+                  <img src={gallery} className="img-responsive" alt="responsive show"/>
                   <div className="btn-group">
                     <button className="btn btn-white btn-xs"><i className="fa fa-thumbs-up" /> Like this!</button>
                     <button className="btn btn-white btn-xs"><i className="fa fa-comments" /> Comment</button>
@@ -284,7 +284,7 @@ class Profile extends Component {
                 <div className="social-footer">
                   <div className="social-comment">
                     <a href="" className="pull-left">
-                      <img alt="image" src={a5}/>
+                      <img alt="show test" src={a5}/>
                     </a>
                     <div className="media-body">
                       <a href="#">
@@ -299,7 +299,7 @@ class Profile extends Component {
 
                   <div className="social-comment">
                     <a href="" className="pull-left">
-                      <img alt="image" src={a5}/>
+                      <img alt="show test" src={a5}/>
                     </a>
                     <div className="media-body">
                       <a href="#">
@@ -314,7 +314,7 @@ class Profile extends Component {
 
                   <div className="social-comment">
                     <a href="" className="pull-left">
-                      <img alt="image" src={a4}/>
+                      <img alt="show test" src={a4}/>
                     </a>
                     <div className="media-body">
                       <a href="#">
@@ -329,7 +329,7 @@ class Profile extends Component {
 
                   <div className="social-comment">
                     <a href="" className="pull-left">
-                      <img alt="image" src={profile}/>
+                      <img alt="show test" src={profile}/>
                     </a>
                     <div className="media-body">
                       <textarea className="form-control" placeholder="Write comment..." />

@@ -13,9 +13,6 @@ import a5 from '../../assets/img/a5.jpg';
 import a6 from '../../assets/img/a6.jpg';
 
 export default class Landing extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   componentDidMount() {
     // eslint-disable-next-line func-names
@@ -37,7 +34,7 @@ export default class Landing extends Component {
               <span className="navbar-toggler-icon" />
             </button>
             <Link className="nav-link" to="">
-              <img alt="" className="img-circle" src={logo}/>
+              <img alt="show logo" className="img-circle" src={logo}/>
             </Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
               aria-controls="navbarText"
@@ -95,7 +92,7 @@ export default class Landing extends Component {
               <div className="row contact-box">
                 <div className="col-sm-4">
                   <div className="text-center">
-                    <img alt="image" className="img-circle-lg m-t-xs img-responsive" src={a1}/>
+                    <img alt="show test" className="img-circle-lg m-t-xs img-responsive" src={a1}/>
                     <div className="m-t-xs font-bold">Graphics designer</div>
                   </div>
                 </div>
@@ -116,7 +113,7 @@ export default class Landing extends Component {
               <div className="row contact-box">
                 <div className="col-sm-4">
                   <div className="text-center">
-                    <img alt="image" className="img-circle-lg m-t-xs img-responsive" src={a2}/>
+                    <img alt="show test" className="img-circle-lg m-t-xs img-responsive" src={a2}/>
                     <div className="m-t-xs font-bold">CEO</div>
                   </div>
                 </div>
@@ -137,7 +134,7 @@ export default class Landing extends Component {
               <div className="row contact-box">
                 <div className="col-sm-4">
                   <div className="text-center">
-                    <img alt="image" className="img-circle-lg m-t-xs img-responsive" src={a3}/>
+                    <img alt="show test" className="img-circle-lg m-t-xs img-responsive" src={a3}/>
                     <div className="m-t-xs font-bold">Marketing manager</div>
                   </div>
                 </div>
@@ -158,7 +155,7 @@ export default class Landing extends Component {
               <div className="row contact-box">
                 <div className="col-sm-4">
                   <div className="text-center">
-                    <img alt="image" className="img-circle-lg m-t-xs img-responsive" src={a4}/>
+                    <img alt="show test" className="img-circle-lg m-t-xs img-responsive" src={a4}/>
                     <div className="m-t-xs font-bold">Sales manager</div>
                   </div>
                 </div>
@@ -179,7 +176,7 @@ export default class Landing extends Component {
               <div className="row contact-box">
                 <div className="col-sm-4">
                   <div className="text-center">
-                    <img alt="image" className="img-circle-lg m-t-xs img-responsive" src={a5} />
+                    <img alt="show test" className="img-circle-lg m-t-xs img-responsive" src={a5} />
                     <div className="m-t-xs font-bold">Graphics designer</div>
                   </div>
                 </div>
@@ -200,7 +197,7 @@ export default class Landing extends Component {
               <div className="row contact-box">
                 <div className="col-sm-4">
                   <div className="text-center">
-                    <img alt="image" className="img-circle-lg m-t-xs img-responsive" src={a6}/>
+                    <img alt="show test" className="img-circle-lg m-t-xs img-responsive" src={a6}/>
                     <div className="m-t-xs font-bold">Sales manager</div>
                   </div>
                 </div>
@@ -270,11 +267,11 @@ export default class Landing extends Component {
                                 Or follow us on social platform
                 </p>
                 <ul className="list-inline social-icon">
-                  <li><a href="#"><i className="fa fa-twitter" /></a>
+                  <li><a href="/app/home"><i className="fa fa-twitter" /></a>
                   </li>
-                  <li><a href="#"><i className="fa fa-facebook" /></a>
+                  <li><a href="/app/home"><i className="fa fa-facebook" /></a>
                   </li>
-                  <li><a href="#"><i className="fa fa-linkedin" /></a>
+                  <li><a href="/app/home"><i className="fa fa-linkedin" /></a>
                   </li>
                 </ul>
               </div>
