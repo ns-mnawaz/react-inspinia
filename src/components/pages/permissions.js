@@ -70,6 +70,7 @@ class Permissions extends Component {
                       dateFormat="MM/dd/yyyy h:mm aa"
                       showTimeInput
                       placeholderText="Click to select a date"
+                      isClearable
                     />
                   </div>
                 </div>
