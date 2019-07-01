@@ -1,20 +1,21 @@
 import $ from 'jquery';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import { Checkbox } from 'react-icheck';
 import EnhancedSwitch from 'react-icheck/lib/EnhancedSwitch';
 import { correctHeight, detectBody } from '../../theme/helpers/helpers';
 import '../../assets/dependencies';
 import logo from '../../assets/img/logo.png';
 import CopyRight from '../../theme/copyRight';
+import { toastr } from 'react-redux-toastr';
 
 EnhancedSwitch.propTypes = {
   ...EnhancedSwitch.propTypes,
   cursor: PropTypes.string
 };
 
-export default class Register extends Component {
+class Register extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -62,7 +63,7 @@ export default class Register extends Component {
               label="<span class='checkbox-label'>Agree the terms and policy</span>"
             />
           </div>
-          <button type="button" id="btnLogin" className="btn btn-primary block full-width m-b">Register</button>
+          <button type="button" id="btnLogin" className="btn btn-primary block full-width m-b" onClick={this.register}>Register</button>
           <Link to="/activate">
             <small>Activate your account?</small>
           </Link>
@@ -80,4 +81,10 @@ export default class Register extends Component {
   handleChange = (e, value) => {
     this.setState({ [e.target.name]: value });
   };
+  register = () => {
+    toastr.success('Get Hired!', 'Welcome to Get Hired! Please login to see magic in action');
+    this.props.history.push('/login');
+  }
 }
+
+export default withRouter(Register);

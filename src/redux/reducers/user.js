@@ -1,45 +1,18 @@
-export default function reducer(state = {
-  user: {
-    id: null,
-    name: null,
-    age: null
-  },
-  fetching: false,
-  fetched: false,
-  error: null
-}, action) {
-  switch (action.type) {
-    case 'FETCH_USER': {
-      return { ...state, fetching: true };
-    }
-    case 'FETCH_USER_REJECTED': {
-      return { ...state, fetching: false, error: action.payload };
-    }
-    case 'FETCH_USER_FULFILLED': {
-      return {
-        ...state,
-        fetching: false,
-        fetched: true,
-        user: action.payload
-      };
-    }
-    case 'SET_USER_NAME': {
-      return {
-        ...state,
-        user: { ...state.user, name: action.payload }
-      };
-    }
-    case 'SET_USER_AGE': {
-      return {
-        ...state,
-        user: { ...state.user, age: action.payload }
-      };
-    }
-    default: {
-      // eslint-disable-next-line
-      console.log('Invalid action');
-    }
-  }
+const INITIAL_STATE = {
+    loading: false,
+    user: {},
+    error: null
+}
 
-  return state;
+export default (state = INITIAL_STATE, action) => {
+    switch (action.type) {
+        case 'LOGIN':
+            return { ...state, loading: true };
+        case 'LOGIN_FULFILLED':
+            return { ...state, loading: false, user: action.payload};
+        case 'LOGIN_REJECTED':
+            return { ...state, loading: false, user: {}, error: action.payload};
+        default:
+            return state
+    }
 }
