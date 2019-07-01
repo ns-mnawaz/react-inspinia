@@ -8,12 +8,12 @@ self.__precacheManifest = [
     "url": "/react-inspinia/static/js/0.1b4e8f7e.chunk.js"
   },
   {
-    "revision": "017456796050bbebba82",
-    "url": "/react-inspinia/static/js/main.5e30979b.chunk.js"
+    "revision": "8d2da3fbe1479ae4940c",
+    "url": "/react-inspinia/static/js/main.8ebe8640.chunk.js"
   },
   {
-    "revision": "afb25272bbaf9a53eade",
-    "url": "/react-inspinia/static/js/runtime~main.6cb406a6.js"
+    "revision": "0ad1ed9074bf7fdcc4fa",
+    "url": "/react-inspinia/static/js/runtime~main.664712fd.js"
   },
   {
     "revision": "9cbcfec53f57e2b49f31",
@@ -52,28 +52,28 @@ self.__precacheManifest = [
     "url": "/react-inspinia/static/js/10.3976f1f0.chunk.js"
   },
   {
-    "revision": "c29aea952d1bc4974dae",
-    "url": "/react-inspinia/static/js/11.41b79778.chunk.js"
+    "revision": "a5b1eb70866659835d26",
+    "url": "/react-inspinia/static/js/11.3aeb193d.chunk.js"
   },
   {
     "revision": "0bd3d5324fbac0851608",
     "url": "/react-inspinia/static/js/12.9cbb1e36.chunk.js"
   },
   {
-    "revision": "765ec66654115d2c2225",
-    "url": "/react-inspinia/static/js/13.c9e3bc87.chunk.js"
+    "revision": "eb72d7a4cc5162694e89",
+    "url": "/react-inspinia/static/js/13.a877847f.chunk.js"
   },
   {
     "revision": "a2dd5fc58f6fc0ceec5a",
     "url": "/react-inspinia/static/js/14.535dbb59.chunk.js"
   },
   {
-    "revision": "608bfc4d463fe9ef4d49",
-    "url": "/react-inspinia/static/js/15.2b469480.chunk.js"
+    "revision": "8eee49b3dd5682a87bff",
+    "url": "/react-inspinia/static/js/15.32d3a737.chunk.js"
   },
   {
-    "revision": "e4fe5ae460e68fb9fd5d",
-    "url": "/react-inspinia/static/js/16.429f8a34.chunk.js"
+    "revision": "67e30f4466b186b38111",
+    "url": "/react-inspinia/static/js/16.a7178cf3.chunk.js"
   },
   {
     "revision": "cf80c854c41d2470f0f4",
@@ -144,12 +144,12 @@ self.__precacheManifest = [
     "url": "/react-inspinia/static/media/4.dd77cc9a.png"
   },
   {
-    "revision": "448c34a56d699c29117adc64c43affeb",
-    "url": "/react-inspinia/static/media/glyphicons-halflings-regular.448c34a5.woff2"
-  },
-  {
     "revision": "f4769f9bdb7466be65088239c12046d1",
     "url": "/react-inspinia/static/media/glyphicons-halflings-regular.f4769f9b.eot"
+  },
+  {
+    "revision": "448c34a56d699c29117adc64c43affeb",
+    "url": "/react-inspinia/static/media/glyphicons-halflings-regular.448c34a5.woff2"
   },
   {
     "revision": "fa2772327f55d8198301fdb8bcfc8158",
@@ -196,12 +196,12 @@ self.__precacheManifest = [
     "url": "/react-inspinia/static/media/avatar_all.c5a509ac.png"
   },
   {
-    "revision": "2182330384ebbad826821fdf8e84efe5",
-    "url": "/react-inspinia/static/media/react-bootstrap-carousel.21823303.eot"
-  },
-  {
     "revision": "c746c4882df00af3b0a7a3b1616bf295",
     "url": "/react-inspinia/static/media/react-bootstrap-carousel.c746c488.woff"
+  },
+  {
+    "revision": "2182330384ebbad826821fdf8e84efe5",
+    "url": "/react-inspinia/static/media/react-bootstrap-carousel.21823303.eot"
   },
   {
     "revision": "f7448c0408e7a78012a82def0fb9e2fe",
@@ -216,7 +216,7 @@ self.__precacheManifest = [
     "url": "/react-inspinia/static/media/a7.dc339f22.jpg"
   },
   {
-    "revision": "017456796050bbebba82",
+    "revision": "8d2da3fbe1479ae4940c",
     "url": "/react-inspinia/static/css/main.77b6ed0f.chunk.css"
   },
   {
@@ -224,7 +224,7 @@ self.__precacheManifest = [
     "url": "/react-inspinia/static/css/5.fc30722f.chunk.css"
   },
   {
-    "revision": "ada665affd08a9dfc542381760bd45d5",
+    "revision": "148a00f6f51180b997fdf9ff9dacfdfe",
     "url": "/react-inspinia/index.html"
   }
 ];
