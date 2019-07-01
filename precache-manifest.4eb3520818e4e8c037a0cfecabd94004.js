@@ -12,8 +12,8 @@ self.__precacheManifest = [
     "url": "/react-inspinia/static/js/main.8ebe8640.chunk.js"
   },
   {
-    "revision": "0ad1ed9074bf7fdcc4fa",
-    "url": "/react-inspinia/static/js/runtime~main.664712fd.js"
+    "revision": "4eab5455d521eb2185da",
+    "url": "/react-inspinia/static/js/runtime~main.56024280.js"
   },
   {
     "revision": "9cbcfec53f57e2b49f31",
@@ -76,8 +76,8 @@ self.__precacheManifest = [
     "url": "/react-inspinia/static/js/16.a7178cf3.chunk.js"
   },
   {
-    "revision": "cf80c854c41d2470f0f4",
-    "url": "/react-inspinia/static/js/17.d43197db.chunk.js"
+    "revision": "6bc3cb725d932d2c261d",
+    "url": "/react-inspinia/static/js/17.6d4993c4.chunk.js"
   },
   {
     "revision": "494790676680bfa752ed",
@@ -188,12 +188,12 @@ self.__precacheManifest = [
     "url": "/react-inspinia/static/media/shattered.ea231622.png"
   },
   {
-    "revision": "f2f2de96e14a40255e93ab5fab29916b",
-    "url": "/react-inspinia/static/media/header_two.f2f2de96.jpg"
-  },
-  {
     "revision": "c5a509acee8aab3a1f62e16ea1204ffc",
     "url": "/react-inspinia/static/media/avatar_all.c5a509ac.png"
+  },
+  {
+    "revision": "f2f2de96e14a40255e93ab5fab29916b",
+    "url": "/react-inspinia/static/media/header_two.f2f2de96.jpg"
   },
   {
     "revision": "c746c4882df00af3b0a7a3b1616bf295",
@@ -224,7 +224,7 @@ self.__precacheManifest = [
     "url": "/react-inspinia/static/css/5.fc30722f.chunk.css"
   },
   {
-    "revision": "148a00f6f51180b997fdf9ff9dacfdfe",
+    "revision": "c87ec026e06ac38ee81635c31e85e436",
     "url": "/react-inspinia/index.html"
   }
 ];
