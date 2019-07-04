@@ -49,36 +49,42 @@ export default class Demo extends React.PureComponent {
                 <img
                   style={{ width: '100%', height: '100%' }}
                   src={header1}
+                  alt="responsive show"
                 />
               </div>
               <div style={styles}>
                 <img
                   style={{ width: '100%', height: '100%' }}
                   src={header4}
+                  alt="responsive show"
                 />
               </div>
               <div style={styles}>
                 <img
                   style={{ width: '100%', height: '100%' }}
                   src={header3}
+                  alt="responsive show"
                 />
               </div>
               <div style={styles}>
                 <img
                   style={{ width: '100%', height: '100%' }}
                   src={header4}
+                  alt="responsive show"
                 />
               </div>
               <div style={styles}>
                 <img
                   style={{ width: '100%', height: '100%' }}
                   src={header1}
+                  alt="responsive show"
                 />
               </div>
               <div style={styles}>
                 <img
                   style={{ width: '100%', height: '100%' }}
                   src={header3}
+                  alt="responsive show"
                 />
               </div>
             </RBCarousel>
