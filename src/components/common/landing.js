@@ -44,16 +44,16 @@ export default class Landing extends Component {
             <div className="collapse navbar-collapse" id="navbarText">
               <ul className="navbar-nav ml-md-auto d-md-flex">
                 <li className="nav-item">
-                  <Link className="nav-link menu-tabs" to="/">
+                  <Link className="nav-link menu-tabs" to="/" id="home">
                           Home
                     <span className="sr-only">(current)</span>
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link menu-tabs" to="/register">Register</Link>
+                  <Link className="nav-link menu-tabs" to="/register" id="register">Register</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link menu-tabs" to="/login">Login</Link>
+                  <Link className="nav-link menu-tabs" to="/login"  id="login">Login</Link>
                 </li>
               </ul>
             </div>

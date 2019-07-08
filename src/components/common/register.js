@@ -42,7 +42,7 @@ class Register extends Component {
           <p>Create account to see it in action.</p>
           <div className="form-group input-group m-b">
             <span className="input-group-addon"><i className="fa fa-user"/></span>
-            <input type="name" name="name" className="form-control" placeholder={'Name'} required=""/>
+            <input type="name" id="name" name="name" className="form-control" placeholder={'Name'} required=""/>
           </div>
           <div className="form-group input-group m-b">
             <span className="input-group-addon"><i className="fa fa-at"/></span>
@@ -70,7 +70,7 @@ class Register extends Component {
           <p className="text-muted text-center">
             <Link to="/login">Already have an account?</Link>
           </p>
-          <Link className="btn btn-sm btn-white btn-block" to="/login">Login</Link>
+          <Link className="btn btn-sm btn-white btn-block" to="/login" id="login_button">Login</Link>
           <Link className="btn btn-sm btn-white btn-block" to="/activate">Activate Account</Link>
           <br/>
           <CopyRight/>

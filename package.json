@@ -44,18 +44,25 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "wdio": "wdio wdio.conf.js"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
- "browserslist": [
+  "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
   ],
   "devDependencies": {
+    "@wdio/cli": "^5.10.10",
+    "@wdio/local-runner": "^5.10.10",
+    "@wdio/mocha-framework": "^5.10.10",
+    "@wdio/selenium-standalone-service": "^5.9.3",
+    "@wdio/spec-reporter": "^5.9.3",
+    "@wdio/sync": "^5.10.8",
     "eslint": "5.16.0",
     "react-scripts": "3.0.1",
     "serve": "^11.0.2"

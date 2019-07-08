@@ -3,6 +3,11 @@
   "plugins": [
     "react"                          // https://github.com/yannickcr/eslint-plugin-react
   ],
+  "settings": {
+    "react": {
+      "version": "16.8.6"
+    }
+  },
   "env": {                           // http://eslint.org/docs/user-guide/configuring.html#specifying-environments
     "browser": true,                 // browser global variables
     "node": true                     // Node.js global variables and Node.js-specific rules
