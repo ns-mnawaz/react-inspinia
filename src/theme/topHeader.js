@@ -2,14 +2,25 @@
 import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import { smoothlyMenu } from './helpers/helpers';
 import $ from 'jquery';
 import a4 from '../assets/img/a4.jpg';
 import a7 from '../assets/img/a7.jpg';
 import profile from '../assets/img/profile.jpg';
+import * as auth from "../helpers/auth";
 
 class TopHeader extends Component {
+
+  constructor(props) {
+    super(props);
+  }
+
+  logout = () =>{
+    auth.logout();
+    this.props.history.push('/');
+  };
+
   render() {
     return (
       <div className="row border-bottom">
@@ -122,7 +133,7 @@ class TopHeader extends Component {
               </ul>
             </li>
             <li>
-              <Link to="/login"> <i className="fa fa-sign-out"/> Logout</Link>
+              <a onClick={this.logout}> <i className="fa fa-sign-out"/> Logout</a>
             </li>
           </ul>
         </nav>
@@ -138,4 +149,4 @@ class TopHeader extends Component {
 }
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({ }, dispatch);
-export default connect(null, mapDispatchToProps)(TopHeader);
+export default withRouter(connect(null, mapDispatchToProps)(TopHeader));

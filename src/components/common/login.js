@@ -12,6 +12,7 @@ import '../../assets/dependencies';
 import logo from '../../assets/img/logo.png';
 import CopyRight from '../../theme/copyRight';
 import { login } from '../../redux/actions/user';
+import * as auth from '../../helpers/auth';
 
 EnhancedSwitch.propTypes = {
   ...EnhancedSwitch.propTypes,
@@ -24,10 +25,12 @@ class Login extends Component {
     this.state = {
       checked: false
     };
+
   }
 
   login = () =>{
-    this.props.login({username: "admin", password: "admin"})
+    this.props.login({username: "admin", password: "admin"});
+    auth.login({token: 'token'});
     this.props.history.push('/app/home');
   };
 
