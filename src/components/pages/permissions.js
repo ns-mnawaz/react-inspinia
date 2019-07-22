@@ -28,10 +28,10 @@ class Permissions extends Component {
     }
 
     onExpand = (expandedKeys) => {
-      console.log('onExpand', expandedKeys);
+      console.log('onExpand', expandedKeys); // eslint-disable-line no-console
     };
     onCheck = (checkedKeys, info) => {
-      console.log('onCheck', checkedKeys, info);
+      console.log('onCheck', checkedKeys, info); // eslint-disable-line no-console
     };
 
     render() {
@@ -81,7 +81,6 @@ class Permissions extends Component {
       );
     }
     handleChange = (date) => {
-      console.log(date);
       this.setState({
         startDate: date
       });

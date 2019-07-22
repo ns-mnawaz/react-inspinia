@@ -1,8 +1,8 @@
-/* eslint-disable linebreak-style */
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
-export default (props) => (
+const MenuItem = (props) => (
   <li>
     <Link to={props.path}>
       { props.icon && <i className={`fa fa-${props.icon}`} /> }
@@ -10,3 +10,12 @@ export default (props) => (
     </Link>
   </li>
 );
+
+MenuItem.propTypes = {
+  path: PropTypes.element.isRequired,
+  icon: PropTypes.element.isRequired,
+  label: PropTypes.element.isRequired,
+  tree: PropTypes.element.isRequired
+};
+
+export default MenuItem;

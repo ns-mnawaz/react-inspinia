@@ -432,7 +432,7 @@ class Inbox extends Component {
       </div>
     );
   }
-    handleChange = (e, value) => {
+    handleChange = (e, value) => { // eslint-disable-line no-unused-vars
 
     };
 }

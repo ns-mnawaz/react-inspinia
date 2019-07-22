@@ -1,7 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export default (props) => (
+const MenuTree = (props) => (
   <li>
     <a href="#">
       <i className={`fa fa-${props.icon}`}/>
@@ -13,3 +14,11 @@ export default (props) => (
     </ul>
   </li>
 );
+
+MenuTree.propTypes = {
+  icon: PropTypes.element.isRequired,
+  label: PropTypes.element.isRequired,
+  children: PropTypes.element.isRequired
+};
+
+export default MenuTree;

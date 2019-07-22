@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
-export default class Content extends Component {
+class Content extends Component {
   render() {
     return (
       <div className="wrapper wrapper-content animated fadeIn">
@@ -9,3 +10,9 @@ export default class Content extends Component {
     );
   }
 }
+
+Content.propTypes = {
+  children: PropTypes.element.isRequired
+};
+
+export default Content;

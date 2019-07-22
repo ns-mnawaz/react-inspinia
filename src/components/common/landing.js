@@ -13,7 +13,6 @@ import a5 from '../../assets/img/a5.jpg';
 import a6 from '../../assets/img/a6.jpg';
 
 export default class Landing extends Component {
-
   componentDidMount() {
     // eslint-disable-next-line func-names
     $(window).bind('load resize', function() {
@@ -53,7 +52,7 @@ export default class Landing extends Component {
                   <Link className="nav-link menu-tabs" to="/register" id="register">Register</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link menu-tabs" to="/login"  id="login">Login</Link>
+                  <Link className="nav-link menu-tabs" to="/login" id="login">Login</Link>
                 </li>
               </ul>
             </div>

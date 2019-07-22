@@ -8,19 +8,10 @@ import $ from 'jquery';
 import a4 from '../assets/img/a4.jpg';
 import a7 from '../assets/img/a7.jpg';
 import profile from '../assets/img/profile.jpg';
-import * as auth from "../helpers/auth";
+import * as auth from '../helpers/auth';
+import PropTypes from 'prop-types';
 
 class TopHeader extends Component {
-
-  constructor(props) {
-    super(props);
-  }
-
-  logout = () =>{
-    auth.logout();
-    this.props.history.push('/');
-  };
-
   render() {
     return (
       <div className="row border-bottom">
@@ -141,12 +132,21 @@ class TopHeader extends Component {
     );
   }
 
+  logout = () => {
+    auth.logout();
+    this.props.history.push('/');
+  };
+
   toggleNavigation(e) {
     e.preventDefault();
     $('body').toggleClass('mini-navbar');
     smoothlyMenu();
   }
 }
+
+TopHeader.propTypes = {
+  history: PropTypes.element.isRequired
+};
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({ }, dispatch);
 export default withRouter(connect(null, mapDispatchToProps)(TopHeader));

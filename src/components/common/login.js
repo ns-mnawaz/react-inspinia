@@ -1,6 +1,6 @@
 import $ from 'jquery';
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
 import { Link, withRouter } from 'react-router-dom';
 import { Checkbox } from 'react-icheck';
 import React, { Component } from 'react';
@@ -25,14 +25,8 @@ class Login extends Component {
     this.state = {
       checked: false
     };
-
   }
 
-  login = () =>{
-    this.props.login({username: "admin", password: "admin"});
-    auth.login({token: 'token'});
-    this.props.history.push('/app/home');
-  };
 
   componentDidMount() {
     // eslint-disable-next-line func-names
@@ -86,12 +80,24 @@ class Login extends Component {
     );
   }
 
+  login = () => {
+    this.props.login({ username: 'admin', password: 'admin' });
+    auth.login({ token: 'token' });
+    this.props.history.push('/app/home');
+  };
+
   handleChange = (e, value) => {
     this.setState({ [e.target.name]: value });
   };
 }
 
-const mapStateToProps = state => ({ user: state.user })
-const mapDispatchToProps = dispatch => bindActionCreators({ login }, dispatch);
+Login.propTypes = {
+  login: PropTypes.element.isRequired,
+  history: PropTypes.element.isRequired
+};
+
+
+const mapStateToProps = (state) => ({ user: state.user });
+const mapDispatchToProps = (dispatch) => bindActionCreators({ login }, dispatch);
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Login));

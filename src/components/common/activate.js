@@ -67,4 +67,9 @@ class Activate extends Component {
       this.props.history.push('/login');
     }
 }
+
+Activate.propTypes = {
+  history: PropTypes.element.isRequired
+};
+
 export default withRouter(Activate);

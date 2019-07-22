@@ -14,7 +14,7 @@ class Compose extends Component {
             <div className="ibox float-e-margins">
               <div className="ibox-content mailbox-content">
                 <div className="file-manager">
-                  
+
                   <div className="space-25"/>
                   <h5>Folders</h5>
                   <ul className="folder-list m-b-md" style={{ padding: '0' }}>

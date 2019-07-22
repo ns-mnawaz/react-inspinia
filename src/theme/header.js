@@ -1,8 +1,8 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
-export default class Header extends Component {
+class Header extends Component {
   render() {
     return (
       <div className="row wrapper border-bottom white-bg page-heading">
@@ -21,3 +21,9 @@ export default class Header extends Component {
     );
   }
 }
+
+Header.propTypes = {
+  title: PropTypes.element.isRequired
+};
+
+export default Header;

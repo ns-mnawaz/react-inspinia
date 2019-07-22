@@ -100,7 +100,7 @@ class Navigation extends Component {
   };
 }
 
-const mapStateToProps = (state) => ({ });
+const mapStateToProps = () => ({ });
 const mapDispatchToProps = (dispatch) => bindActionCreators({ }, dispatch);
 
 export default connect(mapStateToProps, mapDispatchToProps)(Navigation);

@@ -36,3 +36,6 @@ config
 build_webpack/
 
 src/serviceWorker.js
+
+# Inspinia Theme
+Static_Full_Version

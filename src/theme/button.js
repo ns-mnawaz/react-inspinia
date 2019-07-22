@@ -1,7 +1,7 @@
-/* eslint-disable linebreak-style */
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export default (props) => {
+const Button = (props) => {
   const { style, bsStyle, onClick } = props;
   const className = bsStyle ? `btn btn-${bsStyle}` : 'btn';
   return (
@@ -10,3 +10,12 @@ export default (props) => {
     </button>
   );
 };
+
+Button.propTypes = {
+  style: PropTypes.element.isRequired,
+  bsStyle: PropTypes.element.isRequired,
+  children: PropTypes.element.isRequired,
+  onClick: PropTypes.element.isRequired
+};
+
+export default Button;

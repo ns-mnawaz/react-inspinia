@@ -43,14 +43,14 @@ export function smoothlyMenu() {
     $('#side-menu').hide();
     // For smoothly turn on menu
     setTimeout(
-      function() {
+      function() { // eslint-disable-line func-names
         $('#side-menu').fadeIn(400);
       }, 200);
   }
   else if ($('body').hasClass('fixed-sidebar')) {
     $('#side-menu').hide();
     setTimeout(
-      function() {
+      function() { // eslint-disable-line func-names
         $('#side-menu').fadeIn(400);
       }, 100);
   }

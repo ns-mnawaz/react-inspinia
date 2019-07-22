@@ -1,4 +1,10 @@
-/* eslint-disable linebreak-style */
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export default (props) => <div className="row">{props.children}</div>;
+const Row = (props) => <div className="row">{props.children}</div>;
+
+Row.propTypes = {
+  children: PropTypes.element.isRequired
+};
+
+export default Row;

@@ -21,7 +21,10 @@
     "Promise": true,
     "it": true,
     "assert": true,
-    "window": true
+    "window": true,
+    "$": true,
+    "browser": true,
+    "describe": true
   },
   "parserOptions": {
     "ecmaVersion": 6
@@ -170,7 +173,7 @@
     "react/no-multi-comp": 2,        // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-multi-comp.md
     "react/no-unknown-property": 2,  // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unknown-property.md
     "react/prop-types":  [
-      1,
+      2,
       { "ignore": ["dispatch", "match"] }
     ],           // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md
     "react/react-in-jsx-scope": 2,   // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md
@@ -346,10 +349,7 @@
     "no-path-concat": 2,
     "no-process-exit": 2,
     "no-sync": 2,
-    "jsx-a11y/anchor-is-valid": [ "error", {
-      "components": [ "Link" ],
-      "specialLink": [ "hrefLeft", "hrefRight" ],
-      "aspects": [ "noHref", "invalidHref", "preferButton" ]
-    }]
+    "jsx-a11y/href-no-hash": "off",
+    "jsx-a11y/anchor-is-valid": "off"
   }
 }

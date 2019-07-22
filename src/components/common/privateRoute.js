@@ -1,21 +1,29 @@
-import React from "react";
-import {Route,Redirect} from "react-router-dom";
-import {isAuth} from '../../helpers/auth';
+import React from 'react';
+import { Route, Redirect } from 'react-router-dom';
+import { isAuth } from '../../helpers/auth';
+import PropTypes from 'prop-types';
 
-export default ({ component: Component, ...rest }) => (
-    <Route
-        {...rest}
-        render={props =>
-            isAuth() ? (
-                <Component {...props} />
-            ) : (
-                <Redirect
-                    to={{
-                        pathname: "/login",
-                        state: { from: props.location }
-                    }}
-                />
-            )
-        }
-    />
+const PrivateRoute = ({ component: Component, ...rest }) => (
+  <Route
+    {...rest}
+    render={(props) =>
+      isAuth() ? (
+        <Component {...props} />
+      ) : (
+        <Redirect
+          to={{
+            pathname: '/login',
+            state: { from: props.location }
+          }}
+        />
+      )
+    }
+  />
 );
+
+PrivateRoute.propTypes = {
+  component: PropTypes.element.isRequired,
+  location: PropTypes.element.isRequired
+};
+
+export default PrivateRoute;

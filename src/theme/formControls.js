@@ -1,5 +1,4 @@
-import React from 'react';
-import { DatePicker } from 'antd';
+import React from 'react'; // eslint-disable-line no-unused-vars
 
 import 'antd/dist/antd.less';
 
