@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "React-Inspinia",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://mir-nawaz.github.io/react-inspinia",
@@ -45,8 +45,13 @@
     "eject": "react-scripts eject",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "wdio": "wdio wdio.conf.js"
+    "wdio": "wdio wdio.conf.js",
+    "echo": "echo \"Running eslint rules ... \" && exit 0"
   },
+  "pre-commit": [
+    "echo",
+    "lint"
+  ],
   "eslintConfig": {
     "extends": "react-app"
   },
