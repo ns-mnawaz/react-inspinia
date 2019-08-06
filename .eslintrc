@@ -334,7 +334,7 @@
     "computed-property-spacing": 2,
     "consistent-this": [2, "vm"],
     "lines-around-comment": 2,
-    "linebreak-style": 2,
+    "linebreak-style": 0,
     "max-nested-callbacks": 2,
     "no-continue": 2,
     "no-lonely-if": 2,

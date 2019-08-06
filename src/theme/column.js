@@ -8,9 +8,9 @@ const Column = (props) => (
 );
 
 Column.propTypes = {
-  span: PropTypes.element.isRequired,
-  style: PropTypes.element.isRequired,
-  children: PropTypes.element.isRequired
+  span: PropTypes.number,
+  style: PropTypes.object,
+  children: PropTypes.element
 };
 
 export default Column;

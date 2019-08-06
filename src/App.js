@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <Router
         forceRefresh={false}
-        basename={'/react-inspinia'}>
+        basename="/react-inspinia">
         <div className="body">
           <Routes/>
         </div>

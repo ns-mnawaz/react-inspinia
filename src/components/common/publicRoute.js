@@ -22,8 +22,8 @@ const PublicRoute = ({ component: Component, ...rest }) => (
 );
 
 PublicRoute.propTypes = {
-  component: PropTypes.element.isRequired,
-  location: PropTypes.element.isRequired
+  component: PropTypes.oneOfType([PropTypes.element, PropTypes.func]),
+  location: PropTypes.object
 };
 
 export default PublicRoute;
