@@ -128,7 +128,7 @@ exports.config = {
   mochaOpts: {
     ui: 'bdd',
     timeout: 60000
-  }
+  },
   //
   // =====
   // Hooks
@@ -153,14 +153,12 @@ exports.config = {
      */
   // beforeSession: function (config, capabilities, specs) {
   // },
-  /**
-     * Gets executed before test execution begins. At this point you can access to all global
-     * variables like `browser`. It is the perfect place to define custom commands.
-     * @param {Array.<Object>} capabilities list of capabilities details
-     * @param {Array.<String>} specs List of spec file paths that are to be run
-     */
-  // before: function (capabilities, specs) {
-  // },
+  before: function(capabilities, specs) { // eslint-disable-line
+    require('@babel/register')({
+      presets: ['@babel/preset-env']
+    });
+  }
+
   /**
      * Runs before a WebdriverIO command gets executed.
      * @param {String} commandName hook command name
@@ -240,7 +238,7 @@ exports.config = {
      */
   // onComplete: function(exitCode, config, capabilities, results) {
   // },
-  /**
+  /** before
     * Gets executed when a refresh happens.
     * @param {String} oldSessionId session ID of the old session
     * @param {String} newSessionId session ID of the new session

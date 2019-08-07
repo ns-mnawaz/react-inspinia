@@ -1,20 +1,18 @@
-const assert = require('assert');
+import Home from './classes/Home';
+import assert from 'assert';
 
-describe('webdriver.io page', () => {
+describe('Get Hired !!! Home Page', () => {
   it('should have the right title', () => {
-    browser.url('/');
-    const title = browser.getTitle();
+    Home.open();
+    const title = Home.getTitle();
     assert.strictEqual(title, 'Get Hired');
   });
 
   it('should click on register', () => {
-    browser.url('/');
-    $('#register').click();
+    Home.register();
   });
 
   it('should click on login', () => {
-    browser.url('/#/react-inspinia/register');
-    $('#name').setValue('Mir Nawaz');
-    $('#login_button').click();
+    Home.login();
   });
 });

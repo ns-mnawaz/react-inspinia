@@ -46,15 +46,15 @@ class Register extends Component {
           </div>
           <div className="form-group input-group m-b">
             <span className="input-group-addon"><i className="fa fa-at"/></span>
-            <input type="email" name="email" className="form-control" placeholder={'Email'} required=""/>
+            <input type="email" id="email" name="email" className="form-control" placeholder={'Email'} required=""/>
           </div>
           <div className="form-group input-group m-b">
             <span className="input-group-addon"><i className="fa fa-key"/></span>
-            <input type="password" name="password" className="form-control" placeholder={'Password'} required=""/>
+            <input type="password" id="password" name="password" className="form-control" placeholder={'Password'} required=""/>
           </div>
           <div className="text-left">
             <Checkbox
-              checkboxClass="icheckbox_square-green"
+              checkboxClass="icheckbox_square-green aggree_policy"
               increaseArea="20%"
               checked={this.state.checked}
               onChange={this.handleChange}
@@ -63,7 +63,7 @@ class Register extends Component {
               label="<span class='checkbox-label'>Agree the terms and policy</span>"
             />
           </div>
-          <button type="button" id="btnLogin" className="btn btn-primary block full-width m-b" onClick={this.register}>Register</button>
+          <button type="button" id="register_button" className="btn btn-primary block full-width m-b" onClick={this.register}>Register</button>
           <Link to="/activate">
             <small>Activate your account?</small>
           </Link>
