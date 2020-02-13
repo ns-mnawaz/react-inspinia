@@ -1,9 +1,9 @@
-import axios from 'axios';
+import API from '../../api';
 
-export function login() {
+export function login(params) {
   return (dispatch) => {
     dispatch({ type: 'LOGIN' });
-    axios.get('http://viacep.com.br/ws/74922800/json/')
+    API.auth('oauth/token', params)
       .then((response) => {
         dispatch({ type: 'LOGIN_FULFILLED', payload: response.data });
       })

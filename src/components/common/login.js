@@ -23,7 +23,9 @@ class Login extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      checked: false
+      checked: false,
+      email: '',
+      password: ''
     };
   }
 
@@ -47,18 +49,24 @@ class Login extends Component {
           <p>Login in. To see it in action.</p>
           <div className="form-group input-group m-b">
             <span className="input-group-addon"><i className="fa fa-at"/></span>
-            <input type="email" name="email" className="form-control" placeholder={'Email'} required=""/>
+            <input type="email" name="email"
+              onChange={this.handleChange}
+              className="form-control" placeholder={'Email'}
+              required=""/>
           </div>
           <div className="form-group input-group m-b">
             <span className="input-group-addon"><i className="fa fa-key"/></span>
-            <input type="password" name="password" className="form-control" placeholder={'Password'} required=""/>
+            <input type="password" name="password"
+              onChange={this.handleChange}
+              className="form-control" placeholder={'Password'}
+              required=""/>
           </div>
           <div className="text-left">
             <Checkbox
               checkboxClass="icheckbox_square-green"
               increaseArea="20%"
               checked={this.state.checked}
-              onChange={this.handleChange}
+              onChange={this.handleCheckChange}
               name="checked"
               cursor="pointer"
               label="<span class='checkbox-label'>Remember Me</span>"
@@ -81,13 +89,24 @@ class Login extends Component {
   }
 
   login = () => {
-    this.props.login({ username: 'admin', password: 'admin' });
+    const payload = {
+      grant_type: 'password',
+      client_id: 'client1',
+      client_secret: 'secret',
+      username: this.state.email,
+      password: this.state.password
+    };
+    this.props.login(payload);
     auth.login({ token: 'token' });
     this.props.history.push('/app/home');
   };
 
-  handleChange = (e, value) => {
+  handleCheckChange = (e, value) => {
     this.setState({ [e.target.name]: value });
+  };
+
+  handleChange = (e) => {
+    this.setState({ [e.target.name]: e.target.value });
   };
 }
 
@@ -97,7 +116,7 @@ Login.propTypes = {
 };
 
 
-const mapStateToProps = (state) => ({ user: state.user });
+const mapStoreToProps = (state) => ({ user: state.user });
 const mapDispatchToProps = (dispatch) => bindActionCreators({ login }, dispatch);
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Login));
+export default withRouter(connect(mapStoreToProps, mapDispatchToProps)(Login));
