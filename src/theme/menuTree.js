@@ -16,9 +16,9 @@ const MenuTree = (props) => (
 );
 
 MenuTree.propTypes = {
-  icon: PropTypes.element.isRequired,
-  label: PropTypes.element.isRequired,
-  children: PropTypes.element.isRequired
+  icon: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  children: PropTypes.array.isRequired
 };
 
 export default MenuTree;

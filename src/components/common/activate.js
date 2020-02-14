@@ -69,7 +69,7 @@ class Activate extends Component {
 }
 
 Activate.propTypes = {
-  history: PropTypes.element.isRequired
+  history: PropTypes.object.isRequired
 };
 
 export default withRouter(Activate);

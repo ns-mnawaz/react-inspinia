@@ -88,7 +88,7 @@ class Register extends Component {
 }
 
 Register.propTypes = {
-  history: PropTypes.element.isRequired
+  history: PropTypes.object.isRequired
 };
 
 export default withRouter(Register);

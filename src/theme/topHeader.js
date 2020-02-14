@@ -145,7 +145,7 @@ class TopHeader extends Component {
 }
 
 TopHeader.propTypes = {
-  history: PropTypes.element.isRequired
+  history: PropTypes.object.isRequired
 };
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({ }, dispatch);

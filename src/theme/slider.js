@@ -18,7 +18,7 @@ export default class Demo extends React.PureComponent {
   }
   onSelect = (active, direction) => {
     // eslint-disable-next-line no-console
-    console.log(`active=${active} && direction=${direction}`);
+    // console.log(`active=${active} && direction=${direction}`);
   };
   render() {
     const { leftIcon, rightIcon } = this.state;

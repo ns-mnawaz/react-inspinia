@@ -12,10 +12,10 @@ const MenuItem = (props) => (
 );
 
 MenuItem.propTypes = {
-  path: PropTypes.element.isRequired,
-  icon: PropTypes.element.isRequired,
-  label: PropTypes.element.isRequired,
-  tree: PropTypes.element.isRequired
+  path: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  tree: PropTypes.bool.isRequired
 };
 
 export default MenuItem;

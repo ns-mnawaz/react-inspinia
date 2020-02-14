@@ -13,6 +13,7 @@ import logo from '../../assets/img/logo.png';
 import CopyRight from '../../theme/copyRight';
 import { login } from '../../redux/actions/user';
 import * as auth from '../../helpers/auth';
+import config from '../../config';
 
 EnhancedSwitch.propTypes = {
   ...EnhancedSwitch.propTypes,
@@ -90,9 +91,9 @@ class Login extends Component {
 
   login = () => {
     const payload = {
-      grant_type: 'password',
-      client_id: 'client1',
-      client_secret: 'secret',
+      grant_type: config.auth.GRANT_TYPE,
+      client_id: config.auth.CLIENT_ID,
+      client_secret: config.auth.CLIENT_SECRET,
       username: this.state.email,
       password: this.state.password
     };
@@ -111,8 +112,8 @@ class Login extends Component {
 }
 
 Login.propTypes = {
-  login: PropTypes.element.isRequired,
-  history: PropTypes.element.isRequired
+  login: PropTypes.func.isRequired,
+  history: PropTypes.object.isRequired
 };
 
 

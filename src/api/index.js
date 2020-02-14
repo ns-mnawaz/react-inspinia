@@ -1,8 +1,9 @@
 import axios from 'axios';
 import qs from 'qs';
+import config from '../config';
 
-const apiHost = 'https://localhost:446';
-const apiVer = '/api/';
+const apiHost = config.api.HOST;
+const apiVer = config.api.VERSION;
 
 class API {
   static auth(url, payload) {
