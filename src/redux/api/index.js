@@ -1,6 +1,6 @@
 import axios from 'axios';
 import qs from 'qs';
-import config from '../config';
+import config from '../../config';
 
 const apiHost = config.api.HOST;
 const apiVer = config.api.VERSION;

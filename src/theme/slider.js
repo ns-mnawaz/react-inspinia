@@ -16,6 +16,7 @@ export default class Demo extends React.PureComponent {
       autoplay: true
     };
   }
+  // eslint-disable-next-line no-unused-vars
   onSelect = (active, direction) => {
     // eslint-disable-next-line no-console
     // console.log(`active=${active} && direction=${direction}`);

@@ -12,8 +12,9 @@ import '../../assets/dependencies';
 import logo from '../../assets/img/logo.png';
 import CopyRight from '../../theme/copyRight';
 import { login } from '../../redux/actions/user';
-import * as auth from '../../helpers/auth';
+// import * as auth from '../../helpers/auth';
 import config from '../../config';
+import { createLoadingSelector, createErrorMessageSelector } from '../../redux/api/selectors';
 
 EnhancedSwitch.propTypes = {
   ...EnhancedSwitch.propTypes,
@@ -98,8 +99,8 @@ class Login extends Component {
       password: this.state.password
     };
     this.props.login(payload);
-    auth.login({ token: 'token' });
-    this.props.history.push('/app/home');
+    // auth.login({ token: 'token' });
+    // this.props.history.push('/app/home');
   };
 
   handleCheckChange = (e, value) => {
@@ -116,8 +117,10 @@ Login.propTypes = {
   history: PropTypes.object.isRequired
 };
 
+const loadingSelector = createLoadingSelector(['AUTH']);
+const errorSelector = createErrorMessageSelector(['AUTH']);
 
-const mapStoreToProps = (state) => ({ user: state.user });
+const mapStoreToProps = (state) => ({ user: state.user, isFetching: loadingSelector(state), error: errorSelector(state) });
 const mapDispatchToProps = (dispatch) => bindActionCreators({ login }, dispatch);
 
 export default withRouter(connect(mapStoreToProps, mapDispatchToProps)(Login));

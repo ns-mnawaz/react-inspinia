@@ -1,14 +1,14 @@
-import API from '../../api';
+import API from '../../redux/api';
 
 export function login(params) {
   return (dispatch) => {
-    dispatch({ type: 'LOGIN' });
+    dispatch({ type: 'AUTH_REQUEST' });
     API.auth('oauth/token', params)
       .then((response) => {
-        dispatch({ type: 'LOGIN_FULFILLED', payload: response.data });
+        dispatch({ type: 'AUTH_SUCCESS', payload: response.data });
       })
       .catch((err) => {
-        dispatch({ type: 'LOGIN_REJECTED', payload: err });
+        dispatch({ type: 'AUTH_FAILURE', payload: err });
       });
   };
 }
