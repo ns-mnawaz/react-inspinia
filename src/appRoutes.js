@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import $ from 'jquery';
 import React, { Component, lazy } from 'react';
 import { Route, Switch } from 'react-router-dom';

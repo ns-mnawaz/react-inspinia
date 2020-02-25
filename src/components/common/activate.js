@@ -36,7 +36,7 @@ class Activate extends Component {
       <div className="gray-bg" style={{ height: '100vh' }} >
         <div className="middle-box text-center loginscreen animated fadeInDown" style={{ paddingBottom: '40px' }}>
           <Link className="nav-link" to="">
-            <img alt="" className="img-circle" src={logo}/>
+            <img alt="" className="img-circle logo" src={logo}/>
           </Link>
           <h3>Get Hired!</h3>
           <p>Activate account to see it in action.</p>

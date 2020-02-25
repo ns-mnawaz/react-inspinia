@@ -2553,8 +2553,27 @@ div.dt-button-info {
 /* CIRCLE */
 .img-circle {
   border-radius: 50%;
+}
+.logo{
   width: 38px;
   height: 38px;
+}
+.error{
+  color: #D8000C;
+  font-size: 11px;
+  display: block;
+  margin-top: -1rem;
+}
+.icon-border-focus{
+  border-bottom-color: #1ab394 !important;
+  border-left-color: #1ab394 !important;
+  border-top-color: #1ab394 !important;
+}
+.warn{
+  color: #9F6000;
+  font-size: 11px;
+  display: block;
+  margin-top: -1rem;
 }
 .btn-circle {
   width: 30px;
@@ -5675,7 +5694,7 @@ body.mini-navbar.fixed-sidebar .logo-element {
   padding-top: 40px;
 }
 .lockscreen.middle-box {
-  width: 200px;
+  width: 300px;
   padding-top: 110px;
 }
 .loginscreen.middle-box {

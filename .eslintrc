@@ -348,8 +348,6 @@
     "no-plusplus": 2,
     "no-path-concat": 2,
     "no-process-exit": 2,
-    "no-sync": 2,
-    "jsx-a11y/href-no-hash": "off",
-    "jsx-a11y/anchor-is-valid": "off"
+    "no-sync": 2
   }
 }

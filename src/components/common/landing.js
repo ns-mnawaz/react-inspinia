@@ -33,7 +33,7 @@ export default class Landing extends Component {
               <span className="navbar-toggler-icon" />
             </button>
             <Link className="nav-link" to="">
-              <img alt="show logo" className="img-circle" src={logo}/>
+              <img alt="show" className="img-circle logo" src={logo}/>
             </Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
               aria-controls="navbarText"
