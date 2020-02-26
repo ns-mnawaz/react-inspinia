@@ -2,23 +2,33 @@
 export function authHeader() {
 
 }
-// TODO Implement
-export function currentUser() {
 
+export function currentUser() {
+  return JSON.parse(localStorage.getItem('userAuth'));
 }
 
 export function isAuth() {
   return localStorage.getItem('isAuth');
 }
 
-export function login(user = {}) {
-  localStorage.setItem('token', user.token);
+export function login(token = {}) {
+  localStorage.setItem('userAuth', JSON.stringify(token));
   localStorage.setItem('isAuth', true);
   return true;
 }
 
+export function setRemember(user = {}) {
+  localStorage.setItem('userRemember', JSON.stringify(user));
+  return true;
+}
+
+export function removeRemember() {
+  localStorage.removeItem('userRemember');
+  return true;
+}
+
 export function logout() {
-  localStorage.removeItem('token');
+  localStorage.removeItem('userAuth');
   localStorage.removeItem('isAuth');
   return true;
 }

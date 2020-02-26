@@ -74,7 +74,6 @@ class Profile extends Component {
               <div id="sparkline1" />
             </div>
 
-
           </div>
           <div className="row">
 

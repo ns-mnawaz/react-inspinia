@@ -84,7 +84,6 @@ export default class Demo extends React.PureComponent {
     );
   }
 
-
   slideNext = () => {
     this.slider.slideNext();
   };

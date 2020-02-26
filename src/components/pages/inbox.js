@@ -423,7 +423,6 @@ class Inbox extends Component {
                   </tbody>
                 </table>
 
-
               </div>
             </div>
           </div>

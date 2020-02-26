@@ -2,6 +2,7 @@ import $ from 'jquery';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import React, { Component } from 'react';
+import { get, isEmpty } from 'lodash';
 import { bindActionCreators } from 'redux';
 import { Link, withRouter } from 'react-router-dom';
 import EnhancedSwitch from 'react-icheck/lib/EnhancedSwitch';
@@ -12,6 +13,7 @@ import LoginForm from '../forms/login';
 import logo from '../../assets/img/logo.png';
 import CopyRight from '../../theme/copyRight';
 import { login } from '../../redux/actions/user';
+import * as auth from '../../helpers/auth';
 import { correctHeight, detectBody } from '../../theme/helpers/helpers';
 import { createLoadingSelector, createErrorMessageSelector } from '../../redux/api/selectors';
 
@@ -32,6 +34,13 @@ class Login extends Component {
       correctHeight();
       detectBody();
     });
+  }
+
+  static getDerivedStateFromProps(nextProps) {
+    if (!isEmpty(get(nextProps, 'user.auth')) && auth.isAuth()) {
+      nextProps.history.push('/app/home');
+    }
+    return null;
   }
 
   render() {
@@ -70,8 +79,6 @@ class Login extends Component {
       password: values.password
     };
     this.props.login(payload);
-    // auth.login({ token: 'token' });
-    // this.props.history.push('/app/home');
   };
 }
 

@@ -64,7 +64,6 @@ class Compose extends Component {
             </div>
             <div className="mail-box">
 
-
               <div className="mail-body">
 
                 <form className="form-horizontal" method="get">
@@ -106,7 +105,6 @@ class Compose extends Component {
                   title="Move to draft folder"><i className="fa fa-pencil" /> Draft</a>
               </div>
               <div className="clearfix" />
-
 
             </div>
           </div>
