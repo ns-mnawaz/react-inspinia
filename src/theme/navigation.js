@@ -43,7 +43,7 @@ class Navigation extends Component {
           <ul className="nav metismenu" id="side-menu" ref="menu" style={{ zIndex: 2000 }}>
             <li className="nav-header">
               {this.profile()}
-              <div className="logo-element"> <img alt="" className="img-circle" src={logo}/> </div>
+              <div className="logo-element"> <img alt="" className="img-circle logo" src={logo}/> </div>
             </li>
             {this.menu()}
           </ul>
@@ -55,7 +55,7 @@ class Navigation extends Component {
   profile = () => {
     return (
       <div className="dropdown profile-element">
-        <img alt="" className="img-circle" src={logo}/>
+        <img alt="" className="img-circle logo" src={logo}/>
         <span data-toggle="dropdown" className="dropdown-toggle" style={{ cursor: 'pointer' }}>
           <span className="block m-t-xs font-bold">Mir Nawaz</span>
           <span className="text-muted text-xs block">Software Dev <b className="caret" /></span>

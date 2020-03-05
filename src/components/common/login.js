@@ -12,10 +12,12 @@ import config from '../../config';
 import LoginForm from '../forms/login';
 import logo from '../../assets/img/logo.png';
 import CopyRight from '../../theme/copyRight';
+import Loading from '../../theme/loading';
 import { login } from '../../redux/actions/user';
 import * as auth from '../../helpers/auth';
 import { correctHeight, detectBody } from '../../theme/helpers/helpers';
 import { createLoadingSelector, createErrorMessageSelector } from '../../redux/api/selectors';
+import { toastr } from 'react-redux-toastr';
 
 EnhancedSwitch.propTypes = {
   ...EnhancedSwitch.propTypes,
@@ -44,8 +46,11 @@ class Login extends Component {
   }
 
   render() {
+    if (this.props.loading) {return <Loading/>;}
+    if (this.props.error) {toastr.error('Get Hired!', this.props.error);}
+
     return (
-      <div className="gray-bg" style={{ height: '100vh' }} >
+      <div className="gray-bg">
         <div className="middle-box text-center loginscreen animated fadeInDown" style={{ paddingBottom: '40px' }}>
           <Link className="nav-link" to="">
             <img alt="" className="img-circle logo" src={logo}/>
@@ -84,13 +89,15 @@ class Login extends Component {
 
 Login.propTypes = {
   login: PropTypes.func.isRequired,
-  history: PropTypes.object.isRequired
+  history: PropTypes.object.isRequired,
+  loading: PropTypes.bool.isRequired,
+  error: PropTypes.string.isRequired
 };
 
 const loadingSelector = createLoadingSelector(['AUTH']);
 const errorSelector = createErrorMessageSelector(['AUTH']);
 
-const mapStoreToProps = (state) => ({ user: state.user, isFetching: loadingSelector(state), error: errorSelector(state) });
+const mapStoreToProps = (state) => ({ user: state.user, loading: loadingSelector(state), error: errorSelector(state) });
 const mapDispatchToProps = (dispatch) => bindActionCreators({ login }, dispatch);
 
 export default withRouter(connect(mapStoreToProps, mapDispatchToProps)(Login));

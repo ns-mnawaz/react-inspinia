@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
 import Content from '../../theme/content';
-import { toastr } from 'react-redux-toastr';
 import { Line, Polar, Doughnut } from 'react-chartjs-2';
 import charts from '../../constants/charts';
 import a1 from '../../assets/img/a1.jpg';
@@ -12,14 +9,7 @@ import a4 from '../../assets/img/a4.jpg';
 import a5 from '../../assets/img/a5.jpg';
 import a6 from '../../assets/img/a6.jpg';
 
-const mapStateToProps = (state) => ({ teste: state.teste });
-const mapDispatchToProps = (dispatch) => bindActionCreators({}, dispatch);
-
 class Home extends Component {
-  componentDidMount() {
-    toastr.success('Get Hired!', 'Welcome to Get Hired!');
-  }
-
   render() {
     return (
       <Content>
@@ -205,7 +195,7 @@ class Home extends Component {
 
                       <div className="feed-element">
                         <a href="profile.html" className="pull-left">
-                          <img alt="show test" className="img-circle" src={a1}/>
+                          <img alt="show test" className="img-circle logo" src={a1}/>
                         </a>
                         <div className="media-body ">
                           <small className="pull-right">5m ago</small>
@@ -217,7 +207,7 @@ class Home extends Component {
 
                       <div className="feed-element">
                         <a href="profile.html" className="pull-left">
-                          <img alt="show test" className="img-circle" src={a2}/>
+                          <img alt="show test" className="img-circle logo" src={a2}/>
                         </a>
                         <div className="media-body ">
                           <small className="pull-right">2h ago</small>
@@ -228,7 +218,7 @@ class Home extends Component {
                       </div>
                       <div className="feed-element">
                         <a href="profile.html" className="pull-left">
-                          <img alt="show test" className="img-circle" src={a3}/>
+                          <img alt="show test" className="img-circle logo" src={a3}/>
                         </a>
                         <div className="media-body ">
                           <small className="pull-right">2h ago</small>
@@ -238,7 +228,7 @@ class Home extends Component {
                       </div>
                       <div className="feed-element">
                         <a href="profile.html" className="pull-left">
-                          <img alt="show test" className="img-circle" src={a4}/>
+                          <img alt="show test" className="img-circle logo" src={a4}/>
                         </a>
                         <div className="media-body ">
                           <small className="pull-right text-navy">5h ago</small>
@@ -253,7 +243,7 @@ class Home extends Component {
                       </div>
                       <div className="feed-element">
                         <a href="profile.html" className="pull-left">
-                          <img alt="show test" className="img-circle" src={a5}/>
+                          <img alt="show test" className="img-circle logo" src={a5}/>
                         </a>
                         <div className="media-body ">
                           <small className="pull-right">2h ago</small>
@@ -272,7 +262,7 @@ class Home extends Component {
                       </div>
                       <div className="feed-element">
                         <a href="profile.html" className="pull-left">
-                          <img alt="show test" className="img-circle" src={a6}/>
+                          <img alt="show test" className="img-circle logo" src={a6}/>
                         </a>
                         <div className="media-body ">
                           <small className="pull-right">23h ago</small>
@@ -282,7 +272,7 @@ class Home extends Component {
                       </div>
                       <div className="feed-element">
                         <a href="profile.html" className="pull-left">
-                          <img alt="show test" className="img-circle" src={a2}/>
+                          <img alt="show test" className="img-circle logo" src={a2}/>
                         </a>
                         <div className="media-body ">
                           <small className="pull-right">46h ago</small>
@@ -436,4 +426,4 @@ class Home extends Component {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Home);
+export default Home;

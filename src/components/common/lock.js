@@ -13,6 +13,8 @@ import { login } from '../../redux/actions/user';
 import config from '../../config';
 import { createLoadingSelector, createErrorMessageSelector } from '../../redux/api/selectors';
 import LockForm from '../forms/lock';
+import Loading from './login';
+import { toastr } from 'react-redux-toastr';
 
 EnhancedSwitch.propTypes = {
   ...EnhancedSwitch.propTypes,
@@ -38,8 +40,11 @@ class Lock extends Component {
   }
 
   render() {
+    if (this.props.loading) {return <Loading/>;}
+    if (this.props.error) {toastr.error('Get Hired!', this.props.error);}
+
     return (
-      <div className="gray-bg" style={{ height: '100vh' }} >
+      <div className="gray-bg">
         <div className="lock-word animated fadeInDown">
           <span className="first-word">LOCKED</span><span>SCREEN</span>
         </div>
@@ -84,13 +89,15 @@ class Lock extends Component {
 
 Lock.propTypes = {
   login: PropTypes.func.isRequired,
-  history: PropTypes.object.isRequired
+  history: PropTypes.object.isRequired,
+  loading: PropTypes.bool.isRequired,
+  error: PropTypes.string.isRequired
 };
 
 const loadingSelector = createLoadingSelector(['AUTH']);
 const errorSelector = createErrorMessageSelector(['AUTH']);
 
-const mapStoreToProps = (state) => ({ user: state.user, isFetching: loadingSelector(state), error: errorSelector(state) });
+const mapStoreToProps = (state) => ({ user: state.user, loading: loadingSelector(state), error: errorSelector(state) });
 const mapDispatchToProps = (dispatch) => bindActionCreators({ login }, dispatch);
 
 export default withRouter(connect(mapStoreToProps, mapDispatchToProps)(Lock));

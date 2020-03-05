@@ -16,7 +16,7 @@ export default class NotFound extends Component {
   render() {
     return (
       <div id="wrapper">
-        <div className="gray-bg" style={{ height: '100vh' }}>
+        <div className="gray-bg">
           <div className="middle-box text-center loginscreen animated fadeIn">
             <h1 className="logo-name"> M+ </h1>
             <h3> Get Hired! </h3>

@@ -35,7 +35,7 @@ class TopHeader extends Component {
                 <li>
                   <div className="dropdown-messages-box">
                     <a href="profile.html" className="pull-left">
-                      <img alt="" className="img-circle" src={a7}/>
+                      <img alt="" className="img-circle logo" src={a7}/>
                     </a>
                     <div className="media-body">
                       <small className="pull-right">46h ago</small>
@@ -48,7 +48,7 @@ class TopHeader extends Component {
                 <li>
                   <div className="dropdown-messages-box">
                     <a href="profile.html" className="pull-left">
-                      <img alt="" className="img-circle" src={a4}/>
+                      <img alt="" className="img-circle logo" src={a4}/>
                     </a>
                     <div className="media-body ">
                       <small className="pull-right text-navy">5h ago</small>
@@ -61,7 +61,7 @@ class TopHeader extends Component {
                 <li>
                   <div className="dropdown-messages-box">
                     <a href="profile.html" className="pull-left">
-                      <img alt="" className="img-circle" src={profile}/>
+                      <img alt="" className="img-circle logo" src={profile}/>
                     </a>
                     <div className="media-body ">
                       <small className="pull-right">23h ago</small>

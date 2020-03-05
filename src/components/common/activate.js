@@ -33,7 +33,7 @@ class Activate extends Component {
 
   render() {
     return (
-      <div className="gray-bg" style={{ height: '100vh' }} >
+      <div className="gray-bg">
         <div className="middle-box text-center loginscreen animated fadeInDown" style={{ paddingBottom: '40px' }}>
           <Link className="nav-link" to="">
             <img alt="" className="img-circle logo" src={logo}/>

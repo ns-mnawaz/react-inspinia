@@ -41,6 +41,7 @@
     "now-start": "cd build && serve -s ./",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+    "dev": "react-scripts start",
     "start": "REACT_APP_STAGE=dev react-scripts start",
     "build": "REACT_APP_STAGE=production react-scripts build",
     "test": "REACT_APP_STAGE=dev react-scripts test",

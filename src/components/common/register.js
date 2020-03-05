@@ -2,12 +2,12 @@ import $ from 'jquery';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Link, withRouter } from 'react-router-dom';
-import { Checkbox } from 'react-icheck';
 import EnhancedSwitch from 'react-icheck/lib/EnhancedSwitch';
 import { correctHeight, detectBody } from '../../theme/helpers/helpers';
 import '../../assets/dependencies';
 import logo from '../../assets/img/logo.png';
 import CopyRight from '../../theme/copyRight';
+import RegisterForm from '../forms/register';
 import { toastr } from 'react-redux-toastr';
 
 EnhancedSwitch.propTypes = {
@@ -33,37 +33,16 @@ class Register extends Component {
 
   render() {
     return (
-      <div className="gray-bg" style={{ height: '100vh' }} >
+      <div className="gray-bg">
         <div className="middle-box text-center loginscreen animated fadeInDown" style={{ paddingBottom: '40px' }}>
           <Link className="nav-link" to="">
             <img alt="" className="img-circle logo" src={logo}/>
           </Link>
           <h3>Get Hired!</h3>
           <p>Create account to see it in action.</p>
-          <div className="form-group input-group m-b">
-            <span className="input-group-addon"><i className="fa fa-user"/></span>
-            <input type="name" id="name" name="name" className="form-control" placeholder={'Name'} required=""/>
-          </div>
-          <div className="form-group input-group m-b">
-            <span className="input-group-addon"><i className="fa fa-at"/></span>
-            <input type="email" id="email" name="email" className="form-control" placeholder={'Email'} required=""/>
-          </div>
-          <div className="form-group input-group m-b">
-            <span className="input-group-addon"><i className="fa fa-key"/></span>
-            <input type="password" id="password" name="password" className="form-control" placeholder={'Password'} required=""/>
-          </div>
-          <div className="text-left">
-            <Checkbox
-              checkboxClass="icheckbox_square-green aggree_policy"
-              increaseArea="20%"
-              checked={this.state.checked}
-              onChange={this.handleChange}
-              name="checked"
-              cursor="pointer"
-              label="<span class='checkbox-label'>Agree the terms and policy</span>"
-            />
-          </div>
-          <button type="button" id="register_button" className="btn btn-primary block full-width m-b" onClick={this.register}>Register</button>
+
+          <RegisterForm onSubmit={this.register} />
+
           <Link to="/activate">
             <small>Activate your account?</small>
           </Link>

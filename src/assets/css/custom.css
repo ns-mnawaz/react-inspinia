@@ -154,3 +154,11 @@ h1, h2, h3, h4, h5, h6 {
 .contact-items{
     padding: 0px 30px 15px 30px;
 }
+
+body {
+    background-color: #f3f3f4;
+}
+
+#wrapper {
+    background-color: #2f4050;
+}
