@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "06fb1dc0123b323f58c5f21785a271a4",
+    "revision": "59691eea37408bfab68ddc35f78cf097",
     "url": "/react-inspinia/index.html"
   },
   {
@@ -24,8 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-inspinia/static/js/10.5a83ef66.chunk.js"
   },
   {
-    "revision": "a84438707cfdbe4af39f",
-    "url": "/react-inspinia/static/js/11.eb4afc1e.chunk.js"
+    "revision": "4bcda1afbda2a6e3f6d3",
+    "url": "/react-inspinia/static/js/11.8be5feff.chunk.js"
   },
   {
     "revision": "404a44f081facd25dde3",
@@ -100,16 +100,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-inspinia/static/js/8.6ad69e08.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1ef7775c943f6a3eb4cf",
-    "url": "/react-inspinia/static/js/9.775fcf56.chunk.js"
+    "revision": "a900c91e8b23ff988458",
+    "url": "/react-inspinia/static/js/9.06a953a6.chunk.js"
   },
   {
     "revision": "aca80052298faed6efcb",
     "url": "/react-inspinia/static/js/main.c9d41f86.chunk.js"
   },
   {
-    "revision": "9f150c1f3ef1098563df",
-    "url": "/react-inspinia/static/js/runtime-main.6dbaea5d.js"
+    "revision": "38302c4a6f6dd28076ae",
+    "url": "/react-inspinia/static/js/runtime-main.d4e2388d.js"
   },
   {
     "revision": "33950b1989f24f88a3894f0ce3109f47",
