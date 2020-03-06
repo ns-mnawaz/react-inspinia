@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c06b0a69a8e32cba55ebfe2220a59b6f",
+    "revision": "55d7db6fcd075fab7e28f84f8652a39a",
     "url": "/react-inspinia/index.html"
   },
   {
