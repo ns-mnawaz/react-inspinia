@@ -7,10 +7,10 @@
     "static/js/2.c12867a8.chunk.js": "/react-inspinia/static/js/2.c12867a8.chunk.js",
     "static/js/2.c12867a8.chunk.js.map": "/react-inspinia/static/js/2.c12867a8.chunk.js.map",
     "main.css": "/react-inspinia/static/css/main.2d0bef0f.chunk.css",
-    "main.js": "/react-inspinia/static/js/main.c9d41f86.chunk.js",
-    "main.js.map": "/react-inspinia/static/js/main.c9d41f86.chunk.js.map",
-    "runtime-main.js": "/react-inspinia/static/js/runtime-main.d4e2388d.js",
-    "runtime-main.js.map": "/react-inspinia/static/js/runtime-main.d4e2388d.js.map",
+    "main.js": "/react-inspinia/static/js/main.6d32458d.chunk.js",
+    "main.js.map": "/react-inspinia/static/js/main.6d32458d.chunk.js.map",
+    "runtime-main.js": "/react-inspinia/static/js/runtime-main.4ac8ab22.js",
+    "runtime-main.js.map": "/react-inspinia/static/js/runtime-main.4ac8ab22.js.map",
     "static/js/5.c9013854.chunk.js": "/react-inspinia/static/js/5.c9013854.chunk.js",
     "static/js/5.c9013854.chunk.js.map": "/react-inspinia/static/js/5.c9013854.chunk.js.map",
     "static/css/6.025d8bd0.chunk.css": "/react-inspinia/static/css/6.025d8bd0.chunk.css",
@@ -20,12 +20,12 @@
     "static/js/7.a2fafcd8.chunk.js.map": "/react-inspinia/static/js/7.a2fafcd8.chunk.js.map",
     "static/js/8.6ad69e08.chunk.js": "/react-inspinia/static/js/8.6ad69e08.chunk.js",
     "static/js/8.6ad69e08.chunk.js.map": "/react-inspinia/static/js/8.6ad69e08.chunk.js.map",
-    "static/js/9.06a953a6.chunk.js": "/react-inspinia/static/js/9.06a953a6.chunk.js",
-    "static/js/9.06a953a6.chunk.js.map": "/react-inspinia/static/js/9.06a953a6.chunk.js.map",
+    "static/js/9.50bcbdec.chunk.js": "/react-inspinia/static/js/9.50bcbdec.chunk.js",
+    "static/js/9.50bcbdec.chunk.js.map": "/react-inspinia/static/js/9.50bcbdec.chunk.js.map",
     "static/js/10.5a83ef66.chunk.js": "/react-inspinia/static/js/10.5a83ef66.chunk.js",
     "static/js/10.5a83ef66.chunk.js.map": "/react-inspinia/static/js/10.5a83ef66.chunk.js.map",
-    "static/js/11.8be5feff.chunk.js": "/react-inspinia/static/js/11.8be5feff.chunk.js",
-    "static/js/11.8be5feff.chunk.js.map": "/react-inspinia/static/js/11.8be5feff.chunk.js.map",
+    "static/js/11.c1e9aaff.chunk.js": "/react-inspinia/static/js/11.c1e9aaff.chunk.js",
+    "static/js/11.c1e9aaff.chunk.js.map": "/react-inspinia/static/js/11.c1e9aaff.chunk.js.map",
     "static/js/12.bea0dcba.chunk.js": "/react-inspinia/static/js/12.bea0dcba.chunk.js",
     "static/js/12.bea0dcba.chunk.js.map": "/react-inspinia/static/js/12.bea0dcba.chunk.js.map",
     "static/js/13.d1bd9f4a.chunk.js": "/react-inspinia/static/js/13.d1bd9f4a.chunk.js",
@@ -45,7 +45,7 @@
     "static/js/20.59f85938.chunk.js": "/react-inspinia/static/js/20.59f85938.chunk.js",
     "static/js/20.59f85938.chunk.js.map": "/react-inspinia/static/js/20.59f85938.chunk.js.map",
     "index.html": "/react-inspinia/index.html",
-    "precache-manifest.8ca13db77decd5ebe0e351d8741e62ca.js": "/react-inspinia/precache-manifest.8ca13db77decd5ebe0e351d8741e62ca.js",
+    "precache-manifest.899f27ea2231b1da0324e4c22573fcf5.js": "/react-inspinia/precache-manifest.899f27ea2231b1da0324e4c22573fcf5.js",
     "service-worker.js": "/react-inspinia/service-worker.js",
     "static/css/6.025d8bd0.chunk.css.map": "/react-inspinia/static/css/6.025d8bd0.chunk.css.map",
     "static/css/main.2d0bef0f.chunk.css.map": "/react-inspinia/static/css/main.2d0bef0f.chunk.css.map",
@@ -70,10 +70,10 @@
     "static/media/react-bootstrap-carousel.css": "/react-inspinia/static/media/react-bootstrap-carousel.f7448c04.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.d4e2388d.js",
+    "static/js/runtime-main.4ac8ab22.js",
     "static/css/6.025d8bd0.chunk.css",
     "static/js/6.d824a7f2.chunk.js",
     "static/css/main.2d0bef0f.chunk.css",
-    "static/js/main.c9d41f86.chunk.js"
+    "static/js/main.6d32458d.chunk.js"
   ]
 }
