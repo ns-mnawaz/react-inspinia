@@ -1,97 +1,42 @@
 import React from 'react';
-import 'react-bootstrap-carousel/dist/react-bootstrap-carousel.css';
-import RBCarousel from 'react-bootstrap-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { Carousel } from 'react-responsive-carousel';
+
 import Col from './column';
 import Row from './row';
-import header1 from '../assets/img/landing/landing_1.jpg';
-import header3 from '../assets/img/landing/landing_2.jpg';
-import header4 from '../assets/img/landing/landing_3.jpg';
 
-const styles = { height: 400, width: '100%' };
+import header1 from '../assets/img/landing/1.jpg';
+import header3 from '../assets/img/landing/2.jpg';
+import header4 from '../assets/img/landing/3.jpg';
 
 export default class Demo extends React.PureComponent {
   constructor(props) {
     super(props);
-    this.state = {
-      autoplay: true
-    };
+    this.state = {};
   }
-  // eslint-disable-next-line no-unused-vars
-  onSelect = (active, direction) => {
-    // eslint-disable-next-line no-console
-    // console.log(`active=${active} && direction=${direction}`);
-  };
+
   render() {
-    const { leftIcon, rightIcon } = this.state;
     return (
       <Row>
         <Col span={12} style={{ paddingTop: '57px' }}>
-          <RBCarousel
-            animation
-            autoplay={this.state.autoplay}
-            slideshowSpeed={4000}
-            leftIcon={leftIcon}
-            rightIcon={rightIcon}
-            onSelect={this.onSelect}
-            ref={(r) => (this.slider = r)}
-            version={4}
-          >
-            <div style={styles}>
-              <img
-                style={{ width: '100%', height: '100%' }}
-                src={header1}
-                alt="responsive show"
-              />
+          <Carousel
+            showArrows={false} dynamicHeight
+            autoPlay interval={3000}
+            infiniteLoop useKeyboardArrows
+            showThumbs={false} showIndicators>
+            <div>
+              <img src={header1} alt="Slider No. 1"/>
             </div>
-            <div style={styles}>
-              <img
-                style={{ width: '100%', height: '100%' }}
-                src={header4}
-                alt="responsive show"
-              />
+            <div>
+              <img src={header4} alt="Slider No. 2"/>
             </div>
-            <div style={styles}>
-              <img
-                style={{ width: '100%', height: '100%' }}
-                src={header3}
-                alt="responsive show"
-              />
+            <div>
+              <img src={header3} alt="Slider No. 3"/>
             </div>
-            <div style={styles}>
-              <img
-                style={{ width: '100%', height: '100%' }}
-                src={header4}
-                alt="responsive show"
-              />
-            </div>
-            <div style={styles}>
-              <img
-                style={{ width: '100%', height: '100%' }}
-                src={header1}
-                alt="responsive show"
-              />
-            </div>
-            <div style={styles}>
-              <img
-                style={{ width: '100%', height: '100%' }}
-                src={header3}
-                alt="responsive show"
-              />
-            </div>
-          </RBCarousel>
+          </Carousel>
         </Col>
       </Row>
     );
   }
-
-  slideNext = () => {
-    this.slider.slideNext();
-  };
-  slidePrev = () => {
-    this.slider.slidePrev();
-  };
-  goToSlide = () => {
-    this.slider.goToSlide(4);
-  };
 }
 
