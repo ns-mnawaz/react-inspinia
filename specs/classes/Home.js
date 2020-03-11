@@ -2,6 +2,7 @@ import Page from './Page';
 
 class LoginPage extends Page {
   setName(name) { $('#name').setValue(name); }
+  setPhone(value) { $('#phone').setValue(value); }
   setEmail(email) { $('#email').setValue(email); }
   setPassword(password) { $('#password').setValue(password); }
   getTitle() { return browser.getTitle(); }
@@ -17,13 +18,17 @@ class LoginPage extends Page {
   }
 
   login() {
-    super.open('/#/react-inspinia/register');
+    super.open('/#/register');
+    super.pause(3);
+
     this.setName('Mir Nawaz');
+    this.setPhone('3453528122');
     this.setEmail('inbox.mirnawaz@gmail.com');
     this.setPassword('secretpassword');
-    super.click('.aggree_policy');
+    super.click('.agree-policy');
+
     super.pause(2);
-    super.click('#login_button');
+    super.click('#register_button');
     super.pause(3);
   }
 }

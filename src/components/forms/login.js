@@ -3,7 +3,7 @@ import React from 'react';
 import RenderField from './renderField';
 import PropTypes from 'prop-types';
 import CheckBoxField from './checkBoxField';
-import { required } from './validate';
+import { required, email } from './validate';
 
 const LoginForm = (props) => {
   const { handleSubmit, pristine, submitting, invalid } = props;
@@ -12,11 +12,11 @@ const LoginForm = (props) => {
       <div>
         <Field
           className="form-control"
-          placeholder="Username"
+          placeholder="Email"
           name="email"
           type="text"
           fa="fa fa-at"
-          validate={[required]}
+          validate={[required, email]}
           component={RenderField}
         />
       </div>

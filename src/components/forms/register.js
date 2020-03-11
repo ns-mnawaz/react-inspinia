@@ -34,7 +34,7 @@ const RegisterForm = (props) => {
       <div>
         <Field
           className="form-control"
-          placeholder="Username"
+          placeholder="Email"
           name="email"
           type="text"
           fa="fa fa-at"
@@ -55,17 +55,17 @@ const RegisterForm = (props) => {
       </div>
       <div className="text-left">
         <Field
-          name="remember"
+          name="agree_policy"
           component={CheckBoxField}
           type="checkbox"
-          checkboxClass="icheckbox_square-green"
+          checkboxClass="icheckbox_square-green agree-policy"
           increaseArea="20%"
           cursor="pointer"
-          label="<span className='checkbox-label'> Remember Me </span>"
+          label="<span className='checkbox-label'> Agree Policy </span>"
         />
       </div>
       <button type="submit"
-        id="btnLogin"
+        id="register_button"
         className="btn btn-primary block full-width m-b"
         disabled={pristine || submitting || invalid}>
                 Register
