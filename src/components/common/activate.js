@@ -9,6 +9,7 @@ import logo from '../../assets/img/logo.png';
 import CopyRight from '../../theme/copyRight';
 import { toastr } from 'react-redux-toastr';
 import { withRouter } from 'react-router-dom';
+import ActivateForm from '../forms/active';
 
 EnhancedSwitch.propTypes = {
   ...EnhancedSwitch.propTypes,
@@ -40,11 +41,9 @@ class Activate extends Component {
           </Link>
           <h3>Get Hired!</h3>
           <p>Activate account to see it in action.</p>
-          <div className="form-group input-group m-b">
-            <span className="input-group-addon"><i className="fa fa-at"/></span>
-            <input type="email" name="email" className="form-control" placeholder={'Email'} required=""/>
-          </div>
-          <button type="button" id="btnLogin" className="btn btn-primary block full-width m-b" onClick={this.activate}>Activate</button>
+
+          <ActivateForm onSubmit={this.activate} />
+
           <Link to="/register">
             <small>Don't have an account?</small>
           </Link>
@@ -59,13 +58,11 @@ class Activate extends Component {
       </div>
     );
   }
-  handleChange = (e, value) => {
-    this.setState({ [e.target.name]: value });
+
+  activate = () => {
+    toastr.success('Get Hired!', 'You account is activated. Please login to see magic in action.');
+    this.props.history.push('/login');
   };
-    activate = () => {
-      toastr.success('Get Hired!', 'You account is activated. Please login to see magic in action.');
-      this.props.history.push('/login');
-    }
 }
 
 Activate.propTypes = {

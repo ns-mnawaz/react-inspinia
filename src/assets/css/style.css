@@ -9579,8 +9579,21 @@ body.md-skin {
   margin-right: -75px;
 }
 .menu-tabs{
-  font-size: 14px !important;
-  font-weight: 600 !important;
-  padding-top: 12px !important;
-  color: #676a6c !important;
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.active{
+  border-top: 6px solid #1ab394 !important;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+.body-small .navbar {
+  background-color: #f3f3f4;
 }

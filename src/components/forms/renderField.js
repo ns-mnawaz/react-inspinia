@@ -11,10 +11,10 @@ const renderField = ({ input, label, placeholder, type, fa, meta: { touched, err
         </span>
       )}
       <input className="form-control"
-             {...input}
-             placeholder={placeholder}
-             type={type}
-             id={input.name}
+        {...input}
+        placeholder={placeholder}
+        type={type}
+        id={input.name}
       />
     </div>
     {touched && (

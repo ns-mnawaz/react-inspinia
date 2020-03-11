@@ -13,19 +13,36 @@ import a5 from '../../assets/img/a5.jpg';
 import a6 from '../../assets/img/a6.jpg';
 
 export default class Landing extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      headerClass: '',
+      active: 'active',
+      hover: {
+        login: '',
+        register: ''
+      }
+    };
+    this.changeHeaderOn = 200;
+  }
+
   componentDidMount() {
     // eslint-disable-next-line func-names
     $(window).bind('load resize', function() {
       correctHeight();
       detectBody();
     });
+    window.addEventListener('scroll', this.handleScroll);
+  }
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
   }
 
   render() {
     return (
       <div className="landing-page gray-bg">
         <div id="wrapper" className="animate">
-          <nav className="navbar header-top fixed-top navbar-expand-lg  navbar-dark gray-bg">
+          <nav className={`navbar header-top fixed-top navbar-expand-lg navbar-light navbar-scroll ${this.state.headerClass}`}>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
               aria-controls="navbarText"
               aria-expanded="false" aria-label="Toggle navigation">
@@ -42,16 +59,17 @@ export default class Landing extends Component {
             <div className="collapse navbar-collapse" id="navbarText">
               <ul className="navbar-nav ml-md-auto d-md-flex">
                 <li className="nav-item">
-                  <Link className="nav-link menu-tabs" to="/" id="home">
-                          Home
-                    <span className="sr-only">(current)</span>
-                  </Link>
+                  <Link className={`nav-link menu-tabs ${this.state.active}`} to="/" id="home">Home</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link menu-tabs" to="/register" id="register">Register</Link>
+                  <Link className={`nav-link menu-tabs ${this.state.hover.register}`} name="register"
+                    onMouseEnter={(e) => this.toggleHover(e, 'active')} onMouseLeave={(e) => this.toggleHover(e, '')}
+                    to="/register" id="register">Register</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link menu-tabs" to="/login" id="login">Login</Link>
+                  <Link className={`nav-link menu-tabs ${this.state.hover.login}`} name="login"
+                    onMouseEnter={(e) => this.toggleHover(e, 'active')} onMouseLeave={(e) => this.toggleHover(e, '')}
+                    to="/login" id="login">Login</Link>
                 </li>
               </ul>
             </div>
@@ -285,4 +303,24 @@ export default class Landing extends Component {
       </div>
     );
   }
+
+  toggleHover = (event, className) => {
+    const active = !!className ? '' : 'active';
+    this.setState({ hover: { [event.target.name]: className }, active });
+  };
+
+  handleScroll = () => {
+    const docElem = document.documentElement;
+
+    setTimeout(scrollPage.call(this), 250);
+
+    function scrollPage() {
+      const sy = scrollY();
+      this.setState({ headerClass: sy >= this.changeHeaderOn ? 'gray-bg' : '' });
+    }
+
+    function scrollY() {
+      return window.pageYOffset || docElem.scrollTop;
+    }
+  };
 }

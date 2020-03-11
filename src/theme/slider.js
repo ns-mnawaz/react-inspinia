@@ -18,12 +18,13 @@ export default class Demo extends React.PureComponent {
   render() {
     return (
       <Row>
-        <Col span={12} style={{ paddingTop: '57px' }}>
+        <Col span={12}>
           <Carousel
             showArrows={false} dynamicHeight
             autoPlay interval={3000}
             infiniteLoop useKeyboardArrows
-            showThumbs={false} showIndicators>
+            showThumbs={false} showIndicators
+            showStatus={false}>
             <div>
               <img src={header1} alt="Slider No. 1"/>
             </div>
