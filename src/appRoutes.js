@@ -15,6 +15,7 @@ const Contacts = lazy(() => import('./components/pages/contacts'));
 const Home = lazy(() => import('./components/pages/home'));
 const Profile = lazy(() => import('./components/pages/profile'));
 const Permissions = lazy(() => import('./components/pages/permissions'));
+const ManagePermissions = lazy(() => import('./components/pages/managePermissions'));
 const NotFound = lazy(() => import('./components/common/notFound'));
 
 export default class AppRoutes extends Component {
@@ -49,6 +50,7 @@ export default class AppRoutes extends Component {
             <Route path={`${this.state.match.url}/dashboard`} exact component={WaitingComponent(Dashboard)} />
             <Route path={`${this.state.match.url}/home`} exact component={WaitingComponent(Home)} />
             <Route path={`${this.state.match.url}/permissions`} exact component={WaitingComponent(Permissions)} />
+            <Route path={`${this.state.match.url}/managePermissions`} exact component={WaitingComponent(ManagePermissions)} />
             <Route component={NotFound}/>
           </Switch>
           <Footer />

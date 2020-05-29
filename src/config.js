@@ -22,8 +22,8 @@ const prod = {
   }
 };
 
-const config = process.env.REACT_APP_STAGE === 'production' ? prod : dev;
-// const config = process.env.REACT_APP_STAGE === 'production' ? dev : prod;
+// const config = process.env.REACT_APP_STAGE === 'production' ? prod : dev;
+const config = process.env.REACT_APP_STAGE === 'production' ? dev : prod;
 
 export default {
   // Add common config values here

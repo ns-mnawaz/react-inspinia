@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'icheck/skins/square/green.css';
+import 'react-sortable-tree/style.css';
 import 'animate.css/animate.min.css';
 import 'rc-tree/assets/index.css';
 import './css/style.css';
